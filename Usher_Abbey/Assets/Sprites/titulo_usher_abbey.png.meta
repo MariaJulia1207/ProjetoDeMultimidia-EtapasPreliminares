@@ -1,34 +1,37 @@
 fileFormatVersion: 2
-guid: 6dee712940ba77848972885bb3813117
+guid: 242b7b12ed445514bba7cbb2ff9852cc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7453797705714842400
-    second: zoombies 2_0
+      213: -5318903413123235121
+    second: titulo_usher_abbey_0
   - first:
-      213: -1893969858101425309
-    second: zoombies 2_1
+      213: 6835123147005885943
+    second: titulo_usher_abbey_1
   - first:
-      213: -69143493350849853
-    second: zoombies 2_2
+      213: -6222078370464566687
+    second: titulo_usher_abbey_2
   - first:
-      213: 5164090251401383739
-    second: zoombies 2_3
+      213: 2215844215170193483
+    second: titulo_usher_abbey_3
   - first:
-      213: -7472044509998765726
-    second: zoombies 2_4
+      213: 2176146768461847041
+    second: titulo_usher_abbey_4
   - first:
-      213: 7833004069167252152
-    second: zoombies 2_5
+      213: 4407773499639017761
+    second: titulo_usher_abbey_5
   - first:
-      213: 2913004877540737719
-    second: zoombies 2_6
+      213: 9063642387011470596
+    second: titulo_usher_abbey_6
   - first:
-      213: 4494444362769261747
-    second: zoombies 2_7
+      213: 3476507093121267859
+    second: titulo_usher_abbey_7
   - first:
-      213: -4248196194845017968
-    second: zoombies 2_8
+      213: -408620645404936378
+    second: titulo_usher_abbey_8
+  - first:
+      213: -66639653505395318
+    second: titulo_usher_abbey_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 112
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -150,13 +153,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: zoombies 2_0
+      name: titulo_usher_abbey_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 383
-        width: 146
-        height: 322
+        x: 653
+        y: 149
+        width: 188
+        height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 02b31cc7585317760800000000000000
-      internalID: 7453797705714842400
+      spriteID: fc24d2ac6857f26b0800000000000000
+      internalID: -5318903413123235121
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zoombies 2_1
+      name: titulo_usher_abbey_1
       rect:
         serializedVersion: 2
-        x: 175
-        y: 383
-        width: 162
-        height: 282
+        x: 848
+        y: 149
+        width: 98
+        height: 158
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 36b4190e27447b5e0800000000000000
-      internalID: -1893969858101425309
+      spriteID: 7fdf555c94c3bde50800000000000000
+      internalID: 6835123147005885943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zoombies 2_2
+      name: titulo_usher_abbey_2
       rect:
         serializedVersion: 2
-        x: 359
-        y: 383
-        width: 186
-        height: 290
+        x: 953
+        y: 149
+        width: 128
+        height: 218
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +212,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3c20b40fb5a5a0ff0800000000000000
-      internalID: -69143493350849853
+      spriteID: 16271d320bcb6a9a0800000000000000
+      internalID: -6222078370464566687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zoombies 2_3
+      name: titulo_usher_abbey_3
       rect:
         serializedVersion: 2
-        x: 647
-        y: 383
-        width: 146
-        height: 346
+        x: 1088
+        y: 179
+        width: 98
+        height: 143
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b3f46de19b88aa740800000000000000
-      internalID: 5164090251401383739
+      spriteID: b48d2dad29240ce10800000000000000
+      internalID: 2215844215170193483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zoombies 2_4
+      name: titulo_usher_abbey_4
       rect:
         serializedVersion: 2
-        x: 831
-        y: 383
-        width: 138
-        height: 306
+        x: 1193
+        y: 164
+        width: 98
+        height: 158
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,96 +256,140 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 269ad935b17fd4890800000000000000
-      internalID: -7472044509998765726
+      spriteID: 10a5849c4f9333e10800000000000000
+      internalID: 2176146768461847041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: zoombies 2_5
+      name: titulo_usher_abbey_5
       rect:
         serializedVersion: 2
-        x: 7
+        x: 1358
+        y: 149
+        width: 188
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1213d5005ae8b2d30800000000000000
+      internalID: 4407773499639017761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titulo_usher_abbey_6
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 179
+        width: 98
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4050ef0dab688cd70800000000000000
+      internalID: 9063642387011470596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titulo_usher_abbey_7
+      rect:
+        serializedVersion: 2
+        x: 1658
+        y: 179
+        width: 98
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3987e9828c80f3030800000000000000
+      internalID: 3476507093121267859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titulo_usher_abbey_8
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 179
+        width: 98
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6477fbe10b9445af0800000000000000
+      internalID: -408620645404936378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titulo_usher_abbey_9
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 119
+        width: 128
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a851bd4969f331ff0800000000000000
+      internalID: -66639653505395318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titulo_usher_abbey_10
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
-        width: 146
-        height: 305
+        width: 2640
+        height: 480
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8b247ea23bb64bc60800000000000000
-      internalID: 7833004069167252152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zoombies 2_6
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 0
-        width: 178
-        height: 257
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7b2cbca90821d6820800000000000000
-      internalID: 2913004877540737719
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zoombies 2_7
-      rect:
-        serializedVersion: 2
-        x: 391
-        y: 0
-        width: 202
-        height: 265
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3b46e99d5597f5e30800000000000000
-      internalID: 4494444362769261747
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: zoombies 2_8
-      rect:
-        serializedVersion: 2
-        x: 759
-        y: 0
-        width: 162
-        height: 313
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 098b81691106b05c0800000000000000
-      internalID: -4248196194845017968
+      spriteID: ef4cb1a5af8bb084db1ee7dd28f9967e
+      internalID: 526856863
       vertices: []
       indices: 
       edges: []
@@ -351,7 +398,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 507ff265becadf143b22e0fcc364402a
     internalID: 0
     vertices: []
     indices: 
@@ -361,15 +408,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      zoombies 2_0: 7453797705714842400
-      zoombies 2_1: -1893969858101425309
-      zoombies 2_2: -69143493350849853
-      zoombies 2_3: 5164090251401383739
-      zoombies 2_4: -7472044509998765726
-      zoombies 2_5: 7833004069167252152
-      zoombies 2_6: 2913004877540737719
-      zoombies 2_7: 4494444362769261747
-      zoombies 2_8: -4248196194845017968
+      titulo_usher_abbey_10: 526856863
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
