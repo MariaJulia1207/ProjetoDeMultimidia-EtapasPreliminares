@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 1819031ca841c93408ab4b90fa8d418c
+guid: a4b74fb81933b0541a0501fcf70156fb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4949288629027288593
-    second: 2d-brick-gray-wall-texture-600nw-2127747113_0
+      213: -6725009650027075832
+    second: roderick_bolger_1 1_0
+  - first:
+      213: -826681896849441746
+    second: roderick_bolger_1 1_1
+  - first:
+      213: -7581741991097375039
+    second: roderick_bolger_1 1_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,43 +102,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 2d-brick-gray-wall-texture-600nw-2127747113_0
+      name: roderick_bolger_1 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 600
-        height: 395
+        x: 63
+        y: 167
+        width: 130
+        height: 306
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fe9c2ffd638905bb0800000000000000
-      internalID: -4949288629027288593
+      spriteID: 807ef0b9a57fba2a0800000000000000
+      internalID: -6725009650027075832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roderick_bolger_1 1_1
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 167
+        width: 138
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2cfa0cd1390784f0800000000000000
+      internalID: -826681896849441746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roderick_bolger_1 1_2
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 167
+        width: 154
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c66af134dd38c690800000000000000
+      internalID: -7581741991097375039
       vertices: []
       indices: 
       edges: []
@@ -160,8 +184,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      2d-brick-gray-wall-texture-600nw-2127747113_0: -4949288629027288593
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
