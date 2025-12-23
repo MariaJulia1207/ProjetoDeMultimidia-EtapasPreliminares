@@ -144,6 +144,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -534,7 +560,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      roderick_bolger_2_0: 8795586512585157410
+      roderick_bolger_2_1: -7819025264260178037
+      roderick_bolger_2_10: 1408148858998826330
+      roderick_bolger_2_11: 7748364893523531148
+      roderick_bolger_2_12: 7716641909941030605
+      roderick_bolger_2_13: 6436259904229418569
+      roderick_bolger_2_14: 8161795626270476588
+      roderick_bolger_2_15: 8597908917288529822
+      roderick_bolger_2_16: 5374560964584219059
+      roderick_bolger_2_2: 7575231648309109953
+      roderick_bolger_2_3: -8175683259893910667
+      roderick_bolger_2_4: 8172432430000696283
+      roderick_bolger_2_5: 4397258200915909244
+      roderick_bolger_2_6: 2301159187958053397
+      roderick_bolger_2_7: 7126056114225974782
+      roderick_bolger_2_8: -3521133608192588615
+      roderick_bolger_2_9: 8658299706218748435
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

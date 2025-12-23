@@ -1,16 +1,28 @@
 fileFormatVersion: 2
-guid: a4b74fb81933b0541a0501fcf70156fb
+guid: 2949393c5c03fe2439fad7358083ed93
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6725009650027075832
-    second: roderick_bolger_1 1_0
+      213: 2734021628894367902
+    second: jogar_0
   - first:
-      213: -826681896849441746
-    second: roderick_bolger_1 1_1
+      213: 6489839386663390662
+    second: jogar_1
   - first:
-      213: -7581741991097375039
-    second: roderick_bolger_1 1_2
+      213: -2657841796833759312
+    second: jogar_2
+  - first:
+      213: 5443701621042523555
+    second: jogar_3
+  - first:
+      213: 6297785838377361423
+    second: jogar_4
+  - first:
+      213: 3517671198985052126
+    second: jogar_5
+  - first:
+      213: -2911949200378956776
+    second: jogar_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -132,67 +144,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: roderick_bolger_1 1_0
+      name: jogar_0
       rect:
         serializedVersion: 2
-        x: 63
+        x: 788
         y: 167
-        width: 130
-        height: 306
+        width: 167
+        height: 89
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 807ef0b9a57fba2a0800000000000000
-      internalID: -6725009650027075832
+      spriteID: e90db7e9f2231f520800000000000000
+      internalID: 2734021628894367902
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roderick_bolger_1 1_1
+      name: jogar_1
       rect:
         serializedVersion: 2
-        x: 319
-        y: 167
-        width: 138
-        height: 290
+        x: 1028
+        y: 152
+        width: 137
+        height: 209
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2cfa0cd1390784f0800000000000000
-      internalID: -826681896849441746
+      spriteID: 6cd096b998a801a50800000000000000
+      internalID: 6489839386663390662
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: roderick_bolger_1 1_2
+      name: jogar_2
       rect:
         serializedVersion: 2
-        x: 559
+        x: 1178
         y: 167
-        width: 154
-        height: 274
+        width: 92
+        height: 149
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1c66af134dd38c690800000000000000
-      internalID: -7581741991097375039
+      spriteID: 0bfa986b7f27d1bd0800000000000000
+      internalID: -2657841796833759312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogar_3
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 107
+        width: 107
+        height: 194
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ad257948c9eb8b40800000000000000
+      internalID: 5443701621042523555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogar_4
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 167
+        width: 107
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f00e7f75ada366750800000000000000
+      internalID: 6297785838377361423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogar_5
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 152
+        width: 92
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf502c615741d030800000000000000
+      internalID: 3517671198985052126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogar_6
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 167
+        width: 167
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814fd6361ada697d0800000000000000
+      internalID: -2911949200378956776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogar_7
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 20
+        width: 1400
+        height: 440
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a51716a51a47454a830a6cc47abaca1
+      internalID: 855095621
       vertices: []
       indices: 
       edges: []
@@ -201,7 +323,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b544d380a4d786c4d947a508301750c5
     internalID: 0
     vertices: []
     indices: 
@@ -211,9 +333,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      roderick_bolger_1 1_0: -6725009650027075832
-      roderick_bolger_1 1_1: -826681896849441746
-      roderick_bolger_1 1_2: -7581741991097375039
+      jogar_0: 2734021628894367902
+      jogar_1: 6489839386663390662
+      jogar_2: -2657841796833759312
+      jogar_3: 5443701621042523555
+      jogar_4: 6297785838377361423
+      jogar_5: 3517671198985052126
+      jogar_6: -2911949200378956776
+      jogar_7: 855095621
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
