@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: 2949393c5c03fe2439fad7358083ed93
+guid: c745a484ae5fb8c40b0fdd510b0f9612
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2734021628894367902
-    second: jogar_0
+      213: -5896940837400691246
+    second: "jogar_bot\xE3o 2_0"
   - first:
-      213: 6489839386663390662
-    second: jogar_1
+      213: 2493287174327560533
+    second: "jogar_bot\xE3o 2_1"
   - first:
-      213: -2657841796833759312
-    second: jogar_2
+      213: 1171543900836253464
+    second: "jogar_bot\xE3o 2_2"
   - first:
-      213: 5443701621042523555
-    second: jogar_3
+      213: -5320065579172343512
+    second: "jogar_bot\xE3o 2_3"
   - first:
-      213: 6297785838377361423
-    second: jogar_4
+      213: 1684584504700817750
+    second: "jogar_bot\xE3o 2_4"
   - first:
-      213: 3517671198985052126
-    second: jogar_5
+      213: 2957375991109925830
+    second: "jogar_bot\xE3o 2_5"
   - first:
-      213: -2911949200378956776
-    second: jogar_6
+      213: 1306063107245241909
+    second: "jogar_bot\xE3o 2_6"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -114,42 +114,16 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jogar_0
+      name: "jogar_bot\xE3o 2_0"
       rect:
         serializedVersion: 2
-        x: 788
-        y: 167
-        width: 167
+        x: 181
+        y: 158
+        width: 179
         height: 89
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -159,19 +133,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e90db7e9f2231f520800000000000000
-      internalID: 2734021628894367902
+      spriteID: 2ddbc3d3d8bd92ea0800000000000000
+      internalID: -5896940837400691246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jogar_1
+      name: "jogar_bot\xE3o 2_1"
       rect:
         serializedVersion: 2
-        x: 1028
-        y: 152
-        width: 137
+        x: 421
+        y: 143
+        width: 149
         height: 209
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -181,19 +155,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6cd096b998a801a50800000000000000
-      internalID: 6489839386663390662
+      spriteID: 559e4dc997fe99220800000000000000
+      internalID: 2493287174327560533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jogar_2
+      name: "jogar_bot\xE3o 2_2"
       rect:
         serializedVersion: 2
-        x: 1178
-        y: 167
-        width: 92
+        x: 571
+        y: 158
+        width: 104
         height: 149
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -203,19 +177,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0bfa986b7f27d1bd0800000000000000
-      internalID: -2657841796833759312
+      spriteID: 81fce1088f8224010800000000000000
+      internalID: 1171543900836253464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jogar_3
+      name: "jogar_bot\xE3o 2_3"
       rect:
         serializedVersion: 2
-        x: 1283
-        y: 107
-        width: 107
+        x: 676
+        y: 98
+        width: 119
         height: 194
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -225,19 +199,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ad257948c9eb8b40800000000000000
-      internalID: 5443701621042523555
+      spriteID: 82156abea845b26b0800000000000000
+      internalID: -5320065579172343512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jogar_4
+      name: "jogar_bot\xE3o 2_4"
       rect:
         serializedVersion: 2
-        x: 1403
-        y: 167
-        width: 107
+        x: 796
+        y: 158
+        width: 119
         height: 149
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -247,19 +221,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f00e7f75ada366750800000000000000
-      internalID: 6297785838377361423
+      spriteID: 651d1d48ea8d06710800000000000000
+      internalID: 1684584504700817750
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jogar_5
+      name: "jogar_bot\xE3o 2_5"
       rect:
         serializedVersion: 2
-        x: 1523
-        y: 152
-        width: 92
+        x: 916
+        y: 143
+        width: 104
         height: 164
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -269,19 +243,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: edf502c615741d030800000000000000
-      internalID: 3517671198985052126
+      spriteID: 6cb30698bc5ba0920800000000000000
+      internalID: 2957375991109925830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jogar_6
+      name: "jogar_bot\xE3o 2_6"
       rect:
         serializedVersion: 2
-        x: 1688
-        y: 167
-        width: 167
+        x: 1081
+        y: 158
+        width: 179
         height: 89
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -291,30 +265,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 814fd6361ada697d0800000000000000
-      internalID: -2911949200378956776
+      spriteID: 5367899e971102210800000000000000
+      internalID: 1306063107245241909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jogar_7
+      name: "jogar_bot\xE3o 2_7"
       rect:
         serializedVersion: 2
-        x: 600
-        y: 20
-        width: 1400
-        height: 440
+        x: 0
+        y: 0
+        width: 1440
+        height: 480
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a51716a51a47454a830a6cc47abaca1
-      internalID: 855095621
+      spriteID: d122a927cada8ac4f9486d7fd9dfd769
+      internalID: -871617685
       vertices: []
       indices: 
       edges: []
@@ -323,7 +297,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b544d380a4d786c4d947a508301750c5
+    spriteID: b3c37416af829cf4d95dac5955f2072b
     internalID: 0
     vertices: []
     indices: 
@@ -333,14 +307,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      jogar_0: 2734021628894367902
-      jogar_1: 6489839386663390662
-      jogar_2: -2657841796833759312
-      jogar_3: 5443701621042523555
-      jogar_4: 6297785838377361423
-      jogar_5: 3517671198985052126
-      jogar_6: -2911949200378956776
-      jogar_7: 855095621
+      "jogar_bot\xE3o 2_7": -871617685
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
