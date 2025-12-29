@@ -235,7 +235,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: -5185649437945853404, guid: 85d4150e4f7a3114eb10455a8e5044be, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -466,7 +466,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: -6012692695084594170, guid: f6d133943446c5844b93360dc962d927, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1082,7 +1082,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 526856863, guid: 242b7b12ed445514bba7cbb2ff9852cc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 242b7b12ed445514bba7cbb2ff9852cc, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1290,7 +1290,7 @@ GameObject:
   - component: {fileID: 1291967911}
   - component: {fileID: 1291967914}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Button Jogar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1346,7 +1346,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: -871617685, guid: c745a484ae5fb8c40b0fdd510b0f9612, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: c745a484ae5fb8c40b0fdd510b0f9612, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -1380,7 +1380,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1164120271, guid: ca30155bf67172c4590d356f5d01d8fb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ca30155bf67172c4590d356f5d01d8fb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1706,7 +1706,7 @@ GameObject:
   - component: {fileID: 1770916146}
   - component: {fileID: 1770916145}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Button Ajuda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1773,7 +1773,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1784,7 +1784,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: c7d4fe839ff98864497b96d5360d66d6, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -1818,7 +1818,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2854840886681633010, guid: fbc67218546487945877cfea30297ea1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e5c0a0b04d751754d8fa8343761eab88, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2078,7 +2078,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_Sprite: {fileID: 704873444138759947, guid: d3bc13b1d52552849bf68444cae62fe8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

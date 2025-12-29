@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: c745a484ae5fb8c40b0fdd510b0f9612
+guid: ca30155bf67172c4590d356f5d01d8fb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5896940837400691246
-    second: "jogar_bot\xE3o 2_0"
+      213: -8655555369811614809
+    second: "jogar_bot\xE3o 1_0"
   - first:
-      213: 2493287174327560533
-    second: "jogar_bot\xE3o 2_1"
+      213: -418248159563064312
+    second: "jogar_bot\xE3o 1_1"
   - first:
-      213: 1171543900836253464
-    second: "jogar_bot\xE3o 2_2"
+      213: -3085463045986430634
+    second: "jogar_bot\xE3o 1_2"
   - first:
-      213: -5320065579172343512
-    second: "jogar_bot\xE3o 2_3"
+      213: 8796048088567951177
+    second: "jogar_bot\xE3o 1_3"
   - first:
-      213: 1684584504700817750
-    second: "jogar_bot\xE3o 2_4"
+      213: -4658443714424929622
+    second: "jogar_bot\xE3o 1_4"
   - first:
-      213: 2957375991109925830
-    second: "jogar_bot\xE3o 2_5"
+      213: -1553285851237915009
+    second: "jogar_bot\xE3o 1_5"
   - first:
-      213: 1306063107245241909
-    second: "jogar_bot\xE3o 2_6"
+      213: 555931012156957454
+    second: "jogar_bot\xE3o 1_6"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -64,7 +64,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 3
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -118,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "jogar_bot\xE3o 2_0"
+      name: "jogar_bot\xE3o 1_0"
       rect:
         serializedVersion: 2
         x: 181
         y: 158
         width: 179
-        height: 89
+        height: 104
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +133,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ddbc3d3d8bd92ea0800000000000000
-      internalID: -5896940837400691246
+      spriteID: 7a367a0104a41e780800000000000000
+      internalID: -8655555369811614809
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "jogar_bot\xE3o 2_1"
+      name: "jogar_bot\xE3o 1_1"
       rect:
         serializedVersion: 2
         x: 421
         y: 143
         width: 149
-        height: 209
+        height: 224
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,84 +155,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 559e4dc997fe99220800000000000000
-      internalID: 2493287174327560533
+      spriteID: 80c584dc385123af0800000000000000
+      internalID: -418248159563064312
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "jogar_bot\xE3o 2_2"
+      name: "jogar_bot\xE3o 1_2"
       rect:
         serializedVersion: 2
         x: 571
         y: 158
-        width: 104
-        height: 149
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 81fce1088f8224010800000000000000
-      internalID: 1171543900836253464
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "jogar_bot\xE3o 2_3"
-      rect:
-        serializedVersion: 2
-        x: 676
-        y: 98
-        width: 119
-        height: 194
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 82156abea845b26b0800000000000000
-      internalID: -5320065579172343512
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "jogar_bot\xE3o 2_4"
-      rect:
-        serializedVersion: 2
-        x: 796
-        y: 158
-        width: 119
-        height: 149
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 651d1d48ea8d06710800000000000000
-      internalID: 1684584504700817750
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "jogar_bot\xE3o 2_5"
-      rect:
-        serializedVersion: 2
-        x: 916
-        y: 143
         width: 104
         height: 164
       alignment: 0
@@ -243,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6cb30698bc5ba0920800000000000000
-      internalID: 2957375991109925830
+      spriteID: 651526805bb3e25d0800000000000000
+      internalID: -3085463045986430634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "jogar_bot\xE3o 2_6"
+      name: "jogar_bot\xE3o 1_3"
       rect:
         serializedVersion: 2
-        x: 1081
-        y: 158
-        width: 179
-        height: 89
+        x: 676
+        y: 98
+        width: 119
+        height: 209
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,14 +199,80 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5367899e971102210800000000000000
-      internalID: 1306063107245241909
+      spriteID: 94fa8521227d11a70800000000000000
+      internalID: 8796048088567951177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "jogar_bot\xE3o 2_7"
+      name: "jogar_bot\xE3o 1_4"
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 158
+        width: 119
+        height: 164
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa20d8b8f12e95fb0800000000000000
+      internalID: -4658443714424929622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "jogar_bot\xE3o 1_5"
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 143
+        width: 104
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f76e25a7fbe917ae0800000000000000
+      internalID: -1553285851237915009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "jogar_bot\xE3o 1_6"
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 158
+        width: 179
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e032d336f4017b700800000000000000
+      internalID: 555931012156957454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "jogar_bot\xE3o 1_7"
       rect:
         serializedVersion: 2
         x: 0
@@ -287,8 +287,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d122a927cada8ac4f9486d7fd9dfd769
-      internalID: -871617685
+      spriteID: b73a3e7c5be89e2408348f9db23d61e4
+      internalID: -1164120271
       vertices: []
       indices: 
       edges: []
@@ -297,7 +297,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b3c37416af829cf4d95dac5955f2072b
+    spriteID: 0762337c931a2c24b986ff8af68e9b03
     internalID: 0
     vertices: []
     indices: 
@@ -307,7 +307,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "jogar_bot\xE3o 2_7": -871617685
+      "jogar_bot\xE3o 1_7": -1164120271
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,37 +1,31 @@
 fileFormatVersion: 2
-guid: 242b7b12ed445514bba7cbb2ff9852cc
+guid: c7d4fe839ff98864497b96d5360d66d6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5318903413123235121
-    second: titulo_usher_abbey_0
+      213: -2651069902313746521
+    second: "ajudar_bot\xE3o 1_0"
   - first:
-      213: 6835123147005885943
-    second: titulo_usher_abbey_1
+      213: -5129720706805649057
+    second: "ajudar_bot\xE3o 1_1"
   - first:
-      213: -6222078370464566687
-    second: titulo_usher_abbey_2
+      213: 5948825020117648713
+    second: "ajudar_bot\xE3o 1_2"
   - first:
-      213: 2215844215170193483
-    second: titulo_usher_abbey_3
+      213: 859944513684925698
+    second: "ajudar_bot\xE3o 1_3"
   - first:
-      213: 2176146768461847041
-    second: titulo_usher_abbey_4
+      213: 1962004296973768965
+    second: "ajudar_bot\xE3o 1_4"
   - first:
-      213: 4407773499639017761
-    second: titulo_usher_abbey_5
+      213: 2179093993377804830
+    second: "ajudar_bot\xE3o 1_5"
   - first:
-      213: 9063642387011470596
-    second: titulo_usher_abbey_6
+      213: -8311017524674478283
+    second: "ajudar_bot\xE3o 1_6"
   - first:
-      213: 3476507093121267859
-    second: titulo_usher_abbey_7
-  - first:
-      213: -408620645404936378
-    second: titulo_usher_abbey_8
-  - first:
-      213: -66639653505395318
-    second: titulo_usher_abbey_9
+      213: 6012470473951524574
+    second: "ajudar_bot\xE3o 1_7"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -64,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -73,7 +67,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 3
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -123,273 +117,181 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: titulo_usher_abbey_0
+      name: "ajudar_bot\xE3o 1_0"
       rect:
         serializedVersion: 2
-        x: 653
-        y: 149
-        width: 188
-        height: 203
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fc24d2ac6857f26b0800000000000000
-      internalID: -5318903413123235121
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: titulo_usher_abbey_1
-      rect:
-        serializedVersion: 2
-        x: 848
-        y: 149
-        width: 98
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7fdf555c94c3bde50800000000000000
-      internalID: 6835123147005885943
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: titulo_usher_abbey_2
-      rect:
-        serializedVersion: 2
-        x: 953
-        y: 149
-        width: 128
-        height: 218
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 16271d320bcb6a9a0800000000000000
-      internalID: -6222078370464566687
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: titulo_usher_abbey_3
-      rect:
-        serializedVersion: 2
-        x: 1088
-        y: 179
-        width: 98
-        height: 143
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b48d2dad29240ce10800000000000000
-      internalID: 2215844215170193483
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: titulo_usher_abbey_4
-      rect:
-        serializedVersion: 2
-        x: 1193
-        y: 164
-        width: 98
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 10a5849c4f9333e10800000000000000
-      internalID: 2176146768461847041
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: titulo_usher_abbey_5
-      rect:
-        serializedVersion: 2
-        x: 1358
-        y: 149
-        width: 188
-        height: 218
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1213d5005ae8b2d30800000000000000
-      internalID: 4407773499639017761
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: titulo_usher_abbey_6
-      rect:
-        serializedVersion: 2
-        x: 1553
-        y: 179
-        width: 98
-        height: 173
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4050ef0dab688cd70800000000000000
-      internalID: 9063642387011470596
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: titulo_usher_abbey_7
-      rect:
-        serializedVersion: 2
-        x: 1658
-        y: 179
-        width: 98
-        height: 173
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3987e9828c80f3030800000000000000
-      internalID: 3476507093121267859
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: titulo_usher_abbey_8
-      rect:
-        serializedVersion: 2
-        x: 1763
-        y: 179
-        width: 98
-        height: 143
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6477fbe10b9445af0800000000000000
-      internalID: -408620645404936378
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: titulo_usher_abbey_9
-      rect:
-        serializedVersion: 2
-        x: 1853
-        y: 119
-        width: 128
-        height: 188
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a851bd4969f331ff0800000000000000
-      internalID: -66639653505395318
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: titulo_usher_abbey_10
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2640
-        height: 480
+        x: 398
+        y: 128
+        width: 194
+        height: 224
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ef4cb1a5af8bb084db1ee7dd28f9967e
-      internalID: 526856863
+      spriteID: 7af0cd548f1853bd0800000000000000
+      internalID: -2651069902313746521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ajudar_bot\xE3o 1_1"
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 293
+        width: 59
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5132e112329fc8b0800000000000000
+      internalID: -5129720706805649057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ajudar_bot\xE3o 1_2"
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 158
+        width: 134
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 945811b66d87e8250800000000000000
+      internalID: 5948825020117648713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ajudar_bot\xE3o 1_3"
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 158
+        width: 119
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d6cb0aaf22feb00800000000000000
+      internalID: 859944513684925698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ajudar_bot\xE3o 1_4"
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 158
+        width: 119
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50959e053807a3b10800000000000000
+      internalID: 1962004296973768965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ajudar_bot\xE3o 1_5"
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 158
+        width: 179
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e12b87f0172bd3e10800000000000000
+      internalID: 2179093993377804830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ajudar_bot\xE3o 1_6"
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 98
+        width: 104
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f3bbf489559ac80800000000000000
+      internalID: -8311017524674478283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "ajudar_bot\xE3o 1_7"
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 158
+        width: 179
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed6b7666a06907350800000000000000
+      internalID: 6012470473951524574
       vertices: []
       indices: 
       edges: []
@@ -398,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 507ff265becadf143b22e0fcc364402a
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -408,7 +310,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      titulo_usher_abbey_10: 526856863
+      "ajudar_bot\xE3o 1_0": -2651069902313746521
+      "ajudar_bot\xE3o 1_1": -5129720706805649057
+      "ajudar_bot\xE3o 1_2": 5948825020117648713
+      "ajudar_bot\xE3o 1_3": 859944513684925698
+      "ajudar_bot\xE3o 1_4": 1962004296973768965
+      "ajudar_bot\xE3o 1_5": 2179093993377804830
+      "ajudar_bot\xE3o 1_6": -8311017524674478283
+      "ajudar_bot\xE3o 1_7": 6012470473951524574
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

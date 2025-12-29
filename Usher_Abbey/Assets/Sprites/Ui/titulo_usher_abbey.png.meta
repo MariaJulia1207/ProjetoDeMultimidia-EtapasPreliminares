@@ -1,28 +1,37 @@
 fileFormatVersion: 2
-guid: ca30155bf67172c4590d356f5d01d8fb
+guid: 242b7b12ed445514bba7cbb2ff9852cc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8655555369811614809
-    second: "jogar_bot\xE3o 1_0"
+      213: -5318903413123235121
+    second: titulo_usher_abbey_0
   - first:
-      213: -418248159563064312
-    second: "jogar_bot\xE3o 1_1"
+      213: 6835123147005885943
+    second: titulo_usher_abbey_1
   - first:
-      213: -3085463045986430634
-    second: "jogar_bot\xE3o 1_2"
+      213: -6222078370464566687
+    second: titulo_usher_abbey_2
   - first:
-      213: 8796048088567951177
-    second: "jogar_bot\xE3o 1_3"
+      213: 2215844215170193483
+    second: titulo_usher_abbey_3
   - first:
-      213: -4658443714424929622
-    second: "jogar_bot\xE3o 1_4"
+      213: 2176146768461847041
+    second: titulo_usher_abbey_4
   - first:
-      213: -1553285851237915009
-    second: "jogar_bot\xE3o 1_5"
+      213: 4407773499639017761
+    second: titulo_usher_abbey_5
   - first:
-      213: 555931012156957454
-    second: "jogar_bot\xE3o 1_6"
+      213: 9063642387011470596
+    second: titulo_usher_abbey_6
+  - first:
+      213: 3476507093121267859
+    second: titulo_usher_abbey_7
+  - first:
+      213: -408620645404936378
+    second: titulo_usher_abbey_8
+  - first:
+      213: -66639653505395318
+    second: titulo_usher_abbey_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +64,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -64,7 +73,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 3
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -114,17 +123,43 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "jogar_bot\xE3o 1_0"
+      name: titulo_usher_abbey_0
       rect:
         serializedVersion: 2
-        x: 181
-        y: 158
-        width: 179
-        height: 104
+        x: 653
+        y: 149
+        width: 188
+        height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7a367a0104a41e780800000000000000
-      internalID: -8655555369811614809
+      spriteID: fc24d2ac6857f26b0800000000000000
+      internalID: -5318903413123235121
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "jogar_bot\xE3o 1_1"
+      name: titulo_usher_abbey_1
       rect:
         serializedVersion: 2
-        x: 421
-        y: 143
-        width: 149
-        height: 224
+        x: 848
+        y: 149
+        width: 98
+        height: 158
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 80c584dc385123af0800000000000000
-      internalID: -418248159563064312
+      spriteID: 7fdf555c94c3bde50800000000000000
+      internalID: 6835123147005885943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "jogar_bot\xE3o 1_2"
+      name: titulo_usher_abbey_2
       rect:
         serializedVersion: 2
-        x: 571
-        y: 158
-        width: 104
-        height: 164
+        x: 953
+        y: 149
+        width: 128
+        height: 218
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,20 +212,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 651526805bb3e25d0800000000000000
-      internalID: -3085463045986430634
+      spriteID: 16271d320bcb6a9a0800000000000000
+      internalID: -6222078370464566687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "jogar_bot\xE3o 1_3"
+      name: titulo_usher_abbey_3
       rect:
         serializedVersion: 2
-        x: 676
-        y: 98
-        width: 119
-        height: 209
+        x: 1088
+        y: 179
+        width: 98
+        height: 143
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 94fa8521227d11a70800000000000000
-      internalID: 8796048088567951177
+      spriteID: b48d2dad29240ce10800000000000000
+      internalID: 2215844215170193483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "jogar_bot\xE3o 1_4"
+      name: titulo_usher_abbey_4
       rect:
         serializedVersion: 2
-        x: 796
-        y: 158
-        width: 119
-        height: 164
+        x: 1193
+        y: 164
+        width: 98
+        height: 158
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +256,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aa20d8b8f12e95fb0800000000000000
-      internalID: -4658443714424929622
+      spriteID: 10a5849c4f9333e10800000000000000
+      internalID: 2176146768461847041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "jogar_bot\xE3o 1_5"
+      name: titulo_usher_abbey_5
       rect:
         serializedVersion: 2
-        x: 916
-        y: 143
-        width: 104
-        height: 179
+        x: 1358
+        y: 149
+        width: 188
+        height: 218
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,20 +278,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f76e25a7fbe917ae0800000000000000
-      internalID: -1553285851237915009
+      spriteID: 1213d5005ae8b2d30800000000000000
+      internalID: 4407773499639017761
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "jogar_bot\xE3o 1_6"
+      name: titulo_usher_abbey_6
       rect:
         serializedVersion: 2
-        x: 1081
-        y: 158
-        width: 179
-        height: 104
+        x: 1553
+        y: 179
+        width: 98
+        height: 173
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,19 +300,85 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e032d336f4017b700800000000000000
-      internalID: 555931012156957454
+      spriteID: 4050ef0dab688cd70800000000000000
+      internalID: 9063642387011470596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "jogar_bot\xE3o 1_7"
+      name: titulo_usher_abbey_7
+      rect:
+        serializedVersion: 2
+        x: 1658
+        y: 179
+        width: 98
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3987e9828c80f3030800000000000000
+      internalID: 3476507093121267859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titulo_usher_abbey_8
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 179
+        width: 98
+        height: 143
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6477fbe10b9445af0800000000000000
+      internalID: -408620645404936378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titulo_usher_abbey_9
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 119
+        width: 128
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a851bd4969f331ff0800000000000000
+      internalID: -66639653505395318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titulo_usher_abbey_10
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1440
+        width: 2640
         height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -287,8 +388,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b73a3e7c5be89e2408348f9db23d61e4
-      internalID: -1164120271
+      spriteID: ef4cb1a5af8bb084db1ee7dd28f9967e
+      internalID: 526856863
       vertices: []
       indices: 
       edges: []
@@ -297,7 +398,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0762337c931a2c24b986ff8af68e9b03
+    spriteID: 507ff265becadf143b22e0fcc364402a
     internalID: 0
     vertices: []
     indices: 
@@ -307,7 +408,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "jogar_bot\xE3o 1_7": -1164120271
+      titulo_usher_abbey_10: 526856863
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
