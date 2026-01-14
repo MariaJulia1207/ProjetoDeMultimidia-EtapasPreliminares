@@ -18,6 +18,14 @@ public class PlayerController : MonoBehaviour
     public GameObject projetilPrefab;
     public Transform pontoDisparo;
 
+    [Header("Colisão")]
+    public BoxCollider2D colliderEmPe;
+    public BoxCollider2D colliderAbaixado;
+
+    [Header("Vida")]
+    public int vidaMaxima = 5;
+    private int vidaAtual;
+
     private Rigidbody2D rb;
     private Animator anim;
 
@@ -26,11 +34,16 @@ public class PlayerController : MonoBehaviour
     private bool abaixado;
 
     void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
-        rb.gravityScale = gravidadeNormal;
-    }
+{
+    rb = GetComponent<Rigidbody2D>();
+    anim = GetComponent<Animator>();
+    rb.gravityScale = gravidadeNormal;
+    
+    colliderEmPe.enabled = true;
+    colliderAbaixado.enabled = false;
+    vidaAtual = vidaMaxima;
+}
+
 
     void Update()
     {
@@ -63,10 +76,14 @@ public class PlayerController : MonoBehaviour
 
     // ================= ABAIXAR =================
     void Abaixar()
-    {
-        abaixado = Input.GetKey(KeyCode.DownArrow);
-        anim.SetBool("isCrouching", abaixado);
-    }
+{
+    abaixado = Input.GetKey(KeyCode.DownArrow);
+    anim.SetBool("isCrouching", abaixado);
+
+    colliderEmPe.enabled = !abaixado;
+    colliderAbaixado.enabled = abaixado;
+}
+
 
     // ================= COYOTE TIME =================
     void AtualizarCoyoteTime()
@@ -141,4 +158,29 @@ public class PlayerController : MonoBehaviour
             anim.SetBool("isGrounded", false);
         }
     }
+    // ================= DANO =================
+public void TomarDano(int dano)
+{
+    vidaAtual -= dano;
+    anim.SetTrigger("hurt");
+
+    if (vidaAtual <= 0)
+        Morrer();
+}
+    // ================= MORRER =================
+void Morrer()
+{
+    anim.SetTrigger("death");
+    rb.linearVelocity = Vector2.zero;
+    this.enabled = false;
+}
+    // ================= DANO INIMIGO =================
+private void OnCollisionEnter2DEnemy(Collision2D collision)
+{
+    if (collision.gameObject.CompareTag("Enemy"))
+    {
+        TomarDano(1);
+    }
+}
+
 }

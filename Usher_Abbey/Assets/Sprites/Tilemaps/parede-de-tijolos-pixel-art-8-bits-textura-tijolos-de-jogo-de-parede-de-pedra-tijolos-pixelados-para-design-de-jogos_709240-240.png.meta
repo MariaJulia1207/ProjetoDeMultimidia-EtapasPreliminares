@@ -129,10 +129,10 @@ TextureImporter:
       name: parede-de-tijolos-pixel-art-8-bits-textura-tijolos-de-jogo-de-parede-de-pedra-tijolos-pixelados-para-design-de-jogos_709240-240_0
       rect:
         serializedVersion: 2
-        x: 215
-        y: 100
-        width: 377
-        height: 184
+        x: 32
+        y: 121
+        width: 141
+        height: 137
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,6 +169,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: parede-de-tijolos-pixel-art-8-bits-textura-tijolos-de-jogo-de-parede-de-pedra-tijolos-pixelados-para-design-de-jogos_709240-240_2
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 184
+        width: 98
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a5de52f85adc34d8942676dd75b8b5
+      internalID: 904969961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -185,6 +207,7 @@ TextureImporter:
     nameFileIdTable:
       parede-de-tijolos-pixel-art-8-bits-textura-tijolos-de-jogo-de-parede-de-pedra-tijolos-pixelados-para-design-de-jogos_709240-240_0: 2820026638841436364
       parede-de-tijolos-pixel-art-8-bits-textura-tijolos-de-jogo-de-parede-de-pedra-tijolos-pixelados-para-design-de-jogos_709240-240_1: -2104910322
+      parede-de-tijolos-pixel-art-8-bits-textura-tijolos-de-jogo-de-parede-de-pedra-tijolos-pixelados-para-design-de-jogos_709240-240_2: 904969961
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

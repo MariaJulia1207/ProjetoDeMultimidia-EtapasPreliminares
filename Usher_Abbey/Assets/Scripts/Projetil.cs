@@ -3,13 +3,7 @@ using UnityEngine;
 public class Projetil : MonoBehaviour
 {
     public float velocidade = 10f;
-    public int dano = 10;
-    public float tempoVida = 3f;
-
-    void Start()
-    {
-        Destroy(gameObject, tempoVida);
-    }
+    public GameObject efeitoExplosao;
 
     void Update()
     {
@@ -20,12 +14,12 @@ public class Projetil : MonoBehaviour
     {
         if (collision.CompareTag("Enemy"))
         {
-            Enemy enemy = collision.GetComponent<Enemy>();
-            if (enemy != null)
-            {
-                enemy.ReceberDano(dano);
-            }
-
+            Instantiate(efeitoExplosao, transform.position, Quaternion.identity);
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
+        else if (collision.CompareTag("Ground"))
+        {
             Destroy(gameObject);
         }
     }
