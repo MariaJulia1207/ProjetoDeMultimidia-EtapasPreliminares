@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 116b61aedeb522345a36178770bc7159
+guid: 88ade05c309a7e94097854b5e5cb548a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2287744638748552614
-    second: abbey completa penumbra 3_0
+      213: 3926355944776177403
+    second: penhasco_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,42 +96,16 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: abbey completa penumbra 3_0
+      name: penhasco_0
       rect:
         serializedVersion: 2
-        x: 95
+        x: 0
         y: 0
-        width: 1090
+        width: 1280
         height: 1024
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -141,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6ad6961c0a3bfbf10800000000000000
-      internalID: 2287744638748552614
+      spriteID: bf69026dde73d7630800000000000000
+      internalID: 3926355944776177403
       vertices: []
       indices: 
       edges: []
@@ -161,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      abbey completa penumbra 3_0: 2287744638748552614
+      penhasco_0: 3926355944776177403
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
