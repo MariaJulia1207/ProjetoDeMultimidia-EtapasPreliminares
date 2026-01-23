@@ -660,7 +660,28 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tilemap_packed Usher Abbey_0: 5573993613945419047
+      tilemap_packed Usher Abbey_1: -1761161598017772504
+      tilemap_packed Usher Abbey_10: -1273546216925428748
+      tilemap_packed Usher Abbey_11: -5036957645652104220
+      tilemap_packed Usher Abbey_12: 5871845748638209014
+      tilemap_packed Usher Abbey_13: -7756444361648792047
+      tilemap_packed Usher Abbey_14: -5743950067937856737
+      tilemap_packed Usher Abbey_15: -1697903137222965033
+      tilemap_packed Usher Abbey_16: 5135415285858922310
+      tilemap_packed Usher Abbey_17: 7282434986638632035
+      tilemap_packed Usher Abbey_18: -5676038270989210983
+      tilemap_packed Usher Abbey_19: -1179909739813421064
+      tilemap_packed Usher Abbey_2: 6215548915951648317
+      tilemap_packed Usher Abbey_20: 8565875576688797351
+      tilemap_packed Usher Abbey_3: -7530664521193002543
+      tilemap_packed Usher Abbey_4: -3912399004773530219
+      tilemap_packed Usher Abbey_5: 3622376165586533187
+      tilemap_packed Usher Abbey_6: -5759174508358319264
+      tilemap_packed Usher Abbey_7: 474841841585696581
+      tilemap_packed Usher Abbey_8: 944072873999703466
+      tilemap_packed Usher Abbey_9: 1336509536808259845
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

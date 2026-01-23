@@ -673,7 +673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeTime: 5
-  sceneName: Menu
+  sceneName: MenuPrincipal
 --- !u!4 &1398358130
 Transform:
   m_ObjectHideFlags: 0

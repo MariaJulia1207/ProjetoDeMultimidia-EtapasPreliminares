@@ -26,12 +26,23 @@ public class PlayerController : MonoBehaviour
     public int vidaMaxima = 5;
     private int vidaAtual;
 
+    [Header("HUD")]
+    public HealthHUD healthHUD;
+
     private Rigidbody2D rb;
     private Animator anim;
 
     private bool estaNoChao;
     private bool puloNoArDisponivel;
     private bool abaixado;
+
+    public AudioClip somTiro;
+    private AudioSource audio;
+
+    [Header("Áudio - Passos")]
+    public AudioClip[] sonsPasso;
+
+
 
     void Start()
 {
@@ -42,6 +53,10 @@ public class PlayerController : MonoBehaviour
     colliderEmPe.enabled = true;
     colliderAbaixado.enabled = false;
     vidaAtual = vidaMaxima;
+    healthHUD.AtualizarHUD(vidaAtual);
+    audio = GetComponent<AudioSource>();
+    
+
 }
 
 
@@ -129,13 +144,28 @@ public class PlayerController : MonoBehaviour
 
     // ================= ATAQUE =================
     void Atirar()
+{
+    if (Input.GetKeyDown(KeyCode.X))
     {
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            anim.SetTrigger("shoot");
-            Instantiate(projetilPrefab, pontoDisparo.position, pontoDisparo.rotation);
-        }
+        anim.SetTrigger("shoot");
+
+        // Instancia o projétil
+        GameObject proj = Instantiate(
+            projetilPrefab,
+            pontoDisparo.position,
+            Quaternion.identity
+        );
+
+        // Define a direção baseada no lado que o player está olhando
+        float direcao = transform.localScale.x;
+
+        // Ajusta escala do projétil (espelha se necessário)
+        proj.transform.localScale = new Vector3(direcao, 1, 1);
+
+        // Envia a direção para o projétil
+        proj.GetComponent<Projetil>().DefinirDirecao(direcao);
     }
+}
 
     // ================= COLISÃO COM CHÃO =================
     private void OnCollisionEnter2D(Collision2D collision)
@@ -162,11 +192,15 @@ public class PlayerController : MonoBehaviour
 public void TomarDano(int dano)
 {
     vidaAtual -= dano;
+    vidaAtual = Mathf.Clamp(vidaAtual, 0, vidaMaxima);
+
     anim.SetTrigger("hurt");
+    healthHUD.AtualizarHUD(vidaAtual);
 
     if (vidaAtual <= 0)
         Morrer();
 }
+
     // ================= MORRER =================
 void Morrer()
 {
@@ -181,6 +215,21 @@ private void OnCollisionEnter2DEnemy(Collision2D collision)
     {
         TomarDano(1);
     }
+}
+
+public void TocarPasso()
+{
+    if (!estaNoChao || abaixado) return;
+
+    AudioSource audio = GetComponent<AudioSource>();
+    audio.pitch = Random.Range(0.95f, 1.05f);
+    audio.clip = sonsPasso[Random.Range(0, sonsPasso.Length)];
+    audio.Play();
+}
+
+public void TocarTiro()
+{
+    GetComponent<AudioSource>().PlayOneShot(somTiro);
 }
 
 }
