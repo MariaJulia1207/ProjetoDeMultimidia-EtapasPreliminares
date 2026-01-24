@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 71acd0673771af9408c8d37f3b01cf67
+guid: e96bd636ca563464186eed2130a23926
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6309474256520474822
-    second: black_cat (1)_0
-  - first:
-      213: -4284514792772213498
-    second: black_cat (1)_1
-  - first:
-      213: 7435255037527836967
-    second: black_cat (1)_2
+      213: -4247144870321911350
+    second: red_death_3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,43 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: black_cat (1)_0
+      name: red_death_3_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 128
-        width: 224
-        height: 320
+        x: 103
+        y: 0
+        width: 298
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,52 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a3f00acb79e3078a0800000000000000
-      internalID: -6309474256520474822
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: black_cat (1)_1
-      rect:
-        serializedVersion: 2
-        x: 280
-        y: 128
-        width: 208
-        height: 320
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 605e7ed0f785a84c0800000000000000
-      internalID: -4284514792772213498
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: black_cat (1)_2
-      rect:
-        serializedVersion: 2
-        x: 552
-        y: 128
-        width: 192
-        height: 320
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 729c74e10155f2760800000000000000
-      internalID: 7435255037527836967
+      spriteID: ac907d62e3c1f05c0800000000000000
+      internalID: -4247144870321911350
       vertices: []
       indices: 
       edges: []
@@ -201,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3e23e01f82f4673448cf172c1ddf89fc
+    spriteID: 4493cccd0381940488c8aef92550130b
     internalID: 0
     vertices: []
     indices: 
@@ -211,9 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      black_cat (1)_0: -6309474256520474822
-      black_cat (1)_1: -4284514792772213498
-      black_cat (1)_2: 7435255037527836967
+      red_death_3_0: -4247144870321911350
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

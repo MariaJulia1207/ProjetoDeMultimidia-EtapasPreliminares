@@ -1,16 +1,22 @@
 fileFormatVersion: 2
-guid: 71acd0673771af9408c8d37f3b01cf67
+guid: d8c4a8b3a31db5149944b5dd34d5b639
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6309474256520474822
-    second: black_cat (1)_0
+      213: 3096029805974292664
+    second: door and key 1_0
   - first:
-      213: -4284514792772213498
-    second: black_cat (1)_1
+      213: -3498352121925781373
+    second: door and key 1_1
   - first:
-      213: 7435255037527836967
-    second: black_cat (1)_2
+      213: -6842710198580707840
+    second: door and key 1_2
+  - first:
+      213: -5496447204844799918
+    second: door and key 1_3
+  - first:
+      213: -845323873546029435
+    second: door and key 1_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,43 +108,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: black_cat (1)_0
+      name: door and key 1_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 128
-        width: 224
-        height: 320
+        x: 0
+        y: 0
+        width: 256
+        height: 512
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a3f00acb79e3078a0800000000000000
-      internalID: -6309474256520474822
+      spriteID: 8b88e1f74be47fa20800000000000000
+      internalID: 3096029805974292664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: black_cat (1)_1
+      name: door and key 1_1
       rect:
         serializedVersion: 2
-        x: 280
-        y: 128
-        width: 208
-        height: 320
+        x: 416
+        y: 392
+        width: 32
+        height: 120
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 605e7ed0f785a84c0800000000000000
-      internalID: -4284514792772213498
+      spriteID: 3883169b74b537fc0800000000000000
+      internalID: -3498352121925781373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: black_cat (1)_2
+      name: door and key 1_2
       rect:
         serializedVersion: 2
-        x: 552
-        y: 128
-        width: 192
-        height: 320
+        x: 384
+        y: 273
+        width: 96
+        height: 119
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,8 +171,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 729c74e10155f2760800000000000000
-      internalID: 7435255037527836967
+      spriteID: 00e77a0245fc901a0800000000000000
+      internalID: -6842710198580707840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door and key 1_3
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 136
+        width: 32
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 258798c7362b8b3b0800000000000000
+      internalID: -5496447204844799918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: door and key 1_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 16
+        width: 96
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 586b12d6a6ec444f0800000000000000
+      internalID: -845323873546029435
       vertices: []
       indices: 
       edges: []
@@ -201,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3e23e01f82f4673448cf172c1ddf89fc
+    spriteID: 7e6c329d649cb5740af1f61e47e3eda5
     internalID: 0
     vertices: []
     indices: 
@@ -211,9 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      black_cat (1)_0: -6309474256520474822
-      black_cat (1)_1: -4284514792772213498
-      black_cat (1)_2: 7435255037527836967
+      door and key 1_0: 3096029805974292664
+      door and key 1_1: -3498352121925781373
+      door and key 1_2: -6842710198580707840
+      door and key 1_3: -5496447204844799918
+      door and key 1_4: -845323873546029435
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
