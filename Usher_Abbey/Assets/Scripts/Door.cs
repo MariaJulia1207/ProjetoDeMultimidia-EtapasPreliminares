@@ -39,4 +39,10 @@ public class Door : MonoBehaviour
 
         GetComponent<Collider2D>().enabled = false;
     }
+
+    public void DesativarCollider()
+    {
+        GetComponent<Collider2D>().enabled = false;
+    }
+
 }

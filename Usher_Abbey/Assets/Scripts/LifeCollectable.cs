@@ -18,4 +18,3 @@ public class LifeCollectable : MonoBehaviour, ICollectable
         Destroy(gameObject);
     }
 }
-

@@ -17,4 +17,3 @@ public class KeyCollectable : MonoBehaviour, ICollectable
         Destroy(gameObject);
     }
 }
-
