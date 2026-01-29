@@ -1,27 +1,28 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Collider2D))]
+[RequireComponent(typeof(AudioSource))]
 public class MusicArea : MonoBehaviour
 {
-    public AudioSource musica;
-    public float fadeTime = 1.5f;
+    public int prioridade = 1;
 
-    private Coroutine fadeRoutine;
+    private AudioSource audioSource;
 
-    void Start()
+    void Awake()
     {
-        musica.volume = 0f;
-        musica.Stop();
+        audioSource = GetComponent<AudioSource>();
+
+        audioSource.playOnAwake = false;
+        audioSource.loop = true;
+        audioSource.spatialBlend = 0f;
+        audioSource.volume = 1f;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            if (fadeRoutine != null)
-                StopCoroutine(fadeRoutine);
-
-            musica.Play();
-            fadeRoutine = StartCoroutine(FadeMusica(1f));
+            MusicManager.Instance.PlayMusic(audioSource, prioridade);
         }
     }
 
@@ -29,28 +30,7 @@ public class MusicArea : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (fadeRoutine != null)
-                StopCoroutine(fadeRoutine);
-
-            fadeRoutine = StartCoroutine(FadeMusica(0f));
+            MusicManager.Instance.StopMusic(audioSource, prioridade);
         }
-    }
-
-    System.Collections.IEnumerator FadeMusica(float alvo)
-    {
-        float volumeInicial = musica.volume;
-        float tempo = 0f;
-
-        while (tempo < fadeTime)
-        {
-            tempo += Time.deltaTime;
-            musica.volume = Mathf.Lerp(volumeInicial, alvo, tempo / fadeTime);
-            yield return null;
-        }
-
-        musica.volume = alvo;
-
-        if (alvo == 0f)
-            musica.Stop();
     }
 }

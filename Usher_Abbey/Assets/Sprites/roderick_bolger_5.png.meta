@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0d7bd26ff9aa1e14faba184487604c3e
+guid: 56529c06adcfc994398349361e49b66c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6684421117905828402
-    second: red_death_1_0
+      213: -8968483089977554144
+    second: roderick_bolger_5_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: red_death_1_0
+      name: roderick_bolger_5_0
       rect:
         serializedVersion: 2
-        x: 103
-        y: 0
-        width: 314
-        height: 512
+        x: 104
+        y: 168
+        width: 136
+        height: 294
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 23a75e55795d3cc50800000000000000
-      internalID: 6684421117905828402
+      spriteID: 02b4acf852c898380800000000000000
+      internalID: -8968483089977554144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roderick_bolger_5_1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 168
+        width: 176
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb9c0129003c5a48b27892d0cd7dbfb
+      internalID: 627908292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roderick_bolger_5_2
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 168
+        width: 199
+        height: 294
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef531c2054d50d4e801cc4cf4cf9090
+      internalID: 1435054021
       vertices: []
       indices: 
       edges: []
@@ -151,7 +195,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 67f376698595859488880b6440b90540
+    spriteID: 125ced36c83f64a4ba97fb6faa82536b
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +205,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      red_death_1_0: 6684421117905828402
+      roderick_bolger_5_0: -8968483089977554144
+      roderick_bolger_5_1: 627908292
+      roderick_bolger_5_2: 1435054021
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

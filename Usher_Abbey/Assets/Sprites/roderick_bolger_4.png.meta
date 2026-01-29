@@ -96,6 +96,32 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -103,10 +129,10 @@ TextureImporter:
       name: roderick_bolger_4_0
       rect:
         serializedVersion: 2
-        x: 465
+        x: 41
         y: 168
-        width: 200
-        height: 305
+        width: 208
+        height: 294
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,17 +154,17 @@ TextureImporter:
         x: 257
         y: 168
         width: 200
-        height: 305
+        height: 294
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5869d9fcb2a10d4fa2e95e9ebcf8569
-      internalID: -1037826617
+      spriteID: 0a8a30e60914ad14db12181ef8a28456
+      internalID: -576198170
       vertices: []
       indices: 
       edges: []
@@ -147,20 +173,20 @@ TextureImporter:
       name: roderick_bolger_4_2
       rect:
         serializedVersion: 2
-        x: 41
+        x: 465
         y: 168
-        width: 208
-        height: 305
+        width: 200
+        height: 294
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eced4d6ea1662ad45b580ba1230bf5ee
-      internalID: 416634503
+      spriteID: 6a48cfc0adb9bae4a8f2f7124e88a91f
+      internalID: 1714089778
       vertices: []
       indices: 
       edges: []
@@ -169,7 +195,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: fa61b50056ad6d34f91e5be85d67d859
+    spriteID: a196fb9fa1b2e914cb493f454eac16b9
     internalID: 0
     vertices: []
     indices: 
@@ -180,8 +206,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       roderick_bolger_4_0: 1827475128872348789
-      roderick_bolger_4_1: -1037826617
-      roderick_bolger_4_2: 416634503
+      roderick_bolger_4_1: -576198170
+      roderick_bolger_4_2: 1714089778
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

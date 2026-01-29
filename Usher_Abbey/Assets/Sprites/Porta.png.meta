@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 0d7bd26ff9aa1e14faba184487604c3e
+guid: 50f808fbc53754d40b735bde5e89ba6d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6684421117905828402
-    second: red_death_1_0
+      213: -1446459398380425890
+    second: Porta_0
+  - first:
+      213: 8075468225096633940
+    second: Porta_1
+  - first:
+      213: 4264626265770157611
+    second: Porta_2
+  - first:
+      213: -6850833623076930402
+    second: Porta_3
+  - first:
+      213: -6029608551088276881
+    second: Porta_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +138,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: red_death_1_0
+      name: Porta_0
       rect:
         serializedVersion: 2
-        x: 103
-        y: 0
-        width: 314
-        height: 512
+        x: 0
+        y: 72
+        width: 257
+        height: 546
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +153,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 23a75e55795d3cc50800000000000000
-      internalID: 6684421117905828402
+      spriteID: e5d628147d42debe0800000000000000
+      internalID: -1446459398380425890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Porta_1
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 72
+        width: 257
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45ec6d7a093d11070800000000000000
+      internalID: 8075468225096633940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Porta_2
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 72
+        width: 257
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b26e7076efefe2b30800000000000000
+      internalID: 4264626265770157611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Porta_3
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 72
+        width: 257
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c7239fd13fce0a0800000000000000
+      internalID: -6850833623076930402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Porta_4
+      rect:
+        serializedVersion: 2
+        x: 2303
+        y: 72
+        width: 257
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6ab9b118f6825ca0800000000000000
+      internalID: -6029608551088276881
       vertices: []
       indices: 
       edges: []
@@ -151,7 +251,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 67f376698595859488880b6440b90540
+    spriteID: a0dee42659e3d004c93dfeeaa54811be
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +261,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      red_death_1_0: 6684421117905828402
+      Porta_0: -1446459398380425890
+      Porta_1: 8075468225096633940
+      Porta_2: 4264626265770157611
+      Porta_3: -6850833623076930402
+      Porta_4: -6029608551088276881
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

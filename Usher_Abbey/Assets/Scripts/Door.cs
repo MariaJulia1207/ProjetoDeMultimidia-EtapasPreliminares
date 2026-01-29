@@ -5,11 +5,13 @@ public class Door : MonoBehaviour
     public AudioClip somAbrirPorta;
 
     private Animator anim;
+    private Collider2D colliderFisico;
     private bool aberta;
 
     void Start()
     {
-        anim = GetComponent<Animator>();
+        anim = GetComponentInParent<Animator>();
+        colliderFisico = GetComponentInParent<Collider2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -19,7 +21,7 @@ public class Door : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             PlayerKey playerKey = collision.GetComponent<PlayerKey>();
-
+Debug.Log("Colidiu");
             if (playerKey != null && playerKey.temChave)
             {
                 AbrirPorta();
@@ -36,13 +38,11 @@ public class Door : MonoBehaviour
 
         if (somAbrirPorta != null)
             AudioSource.PlayClipAtPoint(somAbrirPorta, transform.position);
-
-        GetComponent<Collider2D>().enabled = false;
     }
 
+    // chamado pelo Animation Event
     public void DesativarCollider()
     {
-        GetComponent<Collider2D>().enabled = false;
+        colliderFisico.enabled = false;
     }
-
 }

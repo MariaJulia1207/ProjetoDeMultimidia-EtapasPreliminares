@@ -2,68 +2,125 @@ using UnityEngine;
 
 public class BossController : MonoBehaviour
 {
+    [Header("Movimento")]
     public float velocidade = 2f;
-    public int vida = 10;
+    public float distanciaMinima = 4f;
 
+    [Header("Vida")]
+    public int vidaMaxima = 20;
+    private int vidaAtual;
+
+    [Header("Ataque")]
     public GameObject projetilPrefab;
     public Transform pontoDisparo;
-    public float tempoEntreTiros = 2f;
+    public float tempoEntreAtaques = 2f;
 
+    private float tempoAtaque;
     private Transform player;
-    private float contadorTiro;
+    private Rigidbody2D rb;
+    private Animator anim;
+    private bool morto;
+    public AudioClip musicaBoss;
+
+void OnEnable()
+{
+    MusicManager.Instance.PlayMusic(musicaBoss, 2);
+}
+
+void OnDestroy()
+{
+    MusicManager.Instance.StopMusic(2);
+}
+
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponentInChildren<Animator>();
+        vidaAtual = vidaMaxima;
     }
 
     void Update()
     {
-        SeguirPlayer();
-        Atirar();
+        if (morto) return;
+
+        SeguirJogador();
+        Atacar();
     }
 
-    void SeguirPlayer()
+    void SeguirJogador()
     {
-        Vector2 direcao = player.position - transform.position;
-        transform.position = Vector2.MoveTowards(
-            transform.position,
-            player.position,
-            velocidade * Time.deltaTime
-        );
+        float distancia = Vector2.Distance(transform.position, player.position);
 
-        transform.localScale = new Vector3(
-            direcao.x > 0 ? 1 : -1,
-            1,
-            1
-        );
-    }
-
-    void Atirar()
-    {
-        contadorTiro -= Time.deltaTime;
-
-        if (contadorTiro <= 0)
+        if (distancia > distanciaMinima)
         {
-            GameObject proj = Instantiate(
-                projetilPrefab,
-                pontoDisparo.position,
-                Quaternion.identity
+            Vector2 direcao = (player.position - transform.position).normalized;
+            rb.linearVelocity = new Vector2(direcao.x * velocidade, 0);
+            anim.SetFloat("speed", Mathf.Abs(rb.linearVelocity.x));
+
+            transform.localScale = new Vector3(
+                Mathf.Sign(direcao.x), 1, 1
             );
-
-            Vector2 dir = (player.position - pontoDisparo.position);
-            proj.GetComponent<BossFireball>()
-                .DefinirDirecao(dir);
-
-            contadorTiro = tempoEntreTiros;
         }
+        else
+        {
+            rb.linearVelocity = Vector2.zero;
+            anim.SetFloat("speed", 0);
+        }
+    }
+
+    void Atacar()
+    {
+        tempoAtaque += Time.deltaTime;
+
+        if (tempoAtaque >= tempoEntreAtaques)
+        {
+            tempoAtaque = 0;
+            anim.SetTrigger("attack");
+        }
+    }
+
+    // Chamado por EVENTO de animação
+    public void DispararProjetil()
+    {
+        float direcao = Mathf.Sign(transform.localScale.x);
+
+        GameObject proj = Instantiate(
+            projetilPrefab,
+            pontoDisparo.position,
+            Quaternion.identity
+        );
+
+        proj.GetComponent<BossProjectile>().DefinirDirecao(direcao);
     }
 
     public void TomarDano(int dano)
     {
-        vida -= dano;
+        if (morto) return;
 
-        if (vida <= 0)
-            Destroy(gameObject);
+        vidaAtual -= dano;
+
+        if (vidaAtual <= 0)
+            Morrer();
+    }
+
+    void Morrer()
+    {
+        morto = true;
+        rb.linearVelocity = Vector2.zero;
+        anim.SetTrigger("death");
+        GetComponent<Collider2D>().enabled = false;
+        Destroy(gameObject, 2f);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            collision.gameObject
+                .GetComponent<PlayerController>()
+                .TomarDano(1);
+        }
     }
 }
