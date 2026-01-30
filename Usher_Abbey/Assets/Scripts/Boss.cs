@@ -1,95 +1,103 @@
 using UnityEngine;
 
-public class BossController : MonoBehaviour
+public class Boss : MonoBehaviour
 {
     [Header("Movimento")]
     public float velocidade = 2f;
-    public float distanciaMinima = 4f;
+    public Transform pontoDestino;
 
-    [Header("Vida")]
-    public int vidaMaxima = 20;
-    private int vidaAtual;
+    private Vector3 pontoInicial;
+    private Transform alvoAtual;
 
     [Header("Ataque")]
     public GameObject projetilPrefab;
     public Transform pontoDisparo;
-    public float tempoEntreAtaques = 2f;
+    public float intervaloTiro = 2f;
+    public float distanciaAtaque = 6f;
 
-    private float tempoAtaque;
-    private Transform player;
+    private float tempoProximoTiro;
+
+    [Header("Vida")]
+    public int vidaMaxima = 10;
+    private int vidaAtual;
+    public bool EstaMorto { get; private set; }
+
+    [Header("Áudio")]
+    public AudioClip[] sonsPasso;
+
     private Rigidbody2D rb;
     private Animator anim;
-    private bool morto;
-    [Header("Música do Boss")]
-    public AudioSource musicaBoss;
-    public int prioridadeMusicaBoss = 2;
-
-
-void OnEnable()
-{
-    MusicManager.Instance.PlayMusic(musicaBoss, 2);
-
-}
-
-void OnDestroy()
-    {
-        MusicManager.Instance.StopMusic(musicaBoss, prioridadeMusicaBoss);
-    }
-
+    private AudioSource audioSource;
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponentInChildren<Animator>();
+        anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+
+        pontoInicial = transform.position;
+        alvoAtual = pontoDestino;
+
         vidaAtual = vidaMaxima;
-        MusicManager.Instance.PlayMusic(musicaBoss, prioridadeMusicaBoss);
     }
 
     void Update()
     {
-        if (morto) return;
+        if (EstaMorto) return;
 
-        SeguirJogador();
-        Atacar();
+        Movimentar();
+        DetectarJogador();
     }
 
-    void SeguirJogador()
+    // ================= MOVIMENTO =================
+    void Movimentar()
     {
-        float distancia = Vector2.Distance(transform.position, player.position);
+        Vector3 direcao = (alvoAtual.position - transform.position).normalized;
+        rb.linearVelocity = new Vector2(direcao.x * velocidade, rb.linearVelocity.y);
 
-        if (distancia > distanciaMinima)
-        {
-            Vector2 direcao = (player.position - transform.position).normalized;
-            rb.linearVelocity = new Vector2(direcao.x * velocidade, 0);
-            anim.SetFloat("speed", Mathf.Abs(rb.linearVelocity.x));
+        anim.SetBool("isWalking", Mathf.Abs(direcao.x) > 0.1f);
 
-            transform.localScale = new Vector3(
-                Mathf.Sign(direcao.x), 1, 1
-            );
-        }
-        else
+        if (direcao.x != 0)
+            transform.localScale = new Vector3(Mathf.Sign(direcao.x), 1, 1);
+
+        if (Vector2.Distance(transform.position, alvoAtual.position) < 0.2f)
         {
-            rb.linearVelocity = Vector2.zero;
-            anim.SetFloat("speed", 0);
+            alvoAtual = alvoAtual == pontoDestino
+                ? CriarTransformTemporario(pontoInicial)
+                : pontoDestino;
         }
     }
 
-    void Atacar()
+    Transform CriarTransformTemporario(Vector3 posicao)
     {
-        tempoAtaque += Time.deltaTime;
-
-        if (tempoAtaque >= tempoEntreAtaques)
-        {
-            tempoAtaque = 0;
-            anim.SetTrigger("attack");
-        }
+        GameObject temp = new GameObject("PontoInicialBoss");
+        temp.transform.position = posicao;
+        return temp.transform;
     }
 
-    // Chamado por EVENTO de animação
-    public void DispararProjetil()
+    // ================= ATAQUE =================
+    void DetectarJogador()
     {
-        float direcao = Mathf.Sign(transform.localScale.x);
+        if (Time.time < tempoProximoTiro) return;
+
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player == null) return;
+
+        float distancia = Vector2.Distance(transform.position, player.transform.position);
+        if (distancia > distanciaAtaque) return;
+
+        float direcaoPlayer = Mathf.Sign(player.transform.position.x - transform.position.x);
+
+        // Só atira se o jogador estiver à frente
+        if (direcaoPlayer == Mathf.Sign(transform.localScale.x))
+            Atacar(direcaoPlayer);
+    }
+
+    void Atacar(float direcao)
+    {
+        tempoProximoTiro = Time.time + intervaloTiro;
+
+        anim.SetTrigger("attack");
 
         GameObject proj = Instantiate(
             projetilPrefab,
@@ -100,9 +108,10 @@ void OnDestroy()
         proj.GetComponent<BossProjectile>().DefinirDirecao(direcao);
     }
 
+    // ================= DANO =================
     public void TomarDano(int dano)
     {
-        if (morto) return;
+        if (EstaMorto) return;
 
         vidaAtual -= dano;
 
@@ -110,22 +119,24 @@ void OnDestroy()
             Morrer();
     }
 
+    // ================= MORTE =================
     void Morrer()
     {
-        morto = true;
+        EstaMorto = true;
+
         rb.linearVelocity = Vector2.zero;
         anim.SetTrigger("death");
+
         GetComponent<Collider2D>().enabled = false;
-        Destroy(gameObject, 2f);
+        this.enabled = false;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    // ================= PASSOS (Animation Event) =================
+    public void TocarPasso()
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            collision.gameObject
-                .GetComponent<PlayerController>()
-                .TomarDano(1);
-        }
+        if (sonsPasso.Length == 0) return;
+
+        audioSource.pitch = Random.Range(0.95f, 1.05f);
+        audioSource.PlayOneShot(sonsPasso[Random.Range(0, sonsPasso.Length)]);
     }
 }
