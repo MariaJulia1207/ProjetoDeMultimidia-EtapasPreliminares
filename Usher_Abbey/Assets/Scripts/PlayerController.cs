@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("HUD")]
     public HealthHUD healthHUD;
+    public LifeHUD lifeHUD;
 
     private Rigidbody2D rb;
     private Animator anim;
@@ -53,6 +54,7 @@ public class PlayerController : MonoBehaviour
     colliderEmPe.enabled = true;
     colliderAbaixado.enabled = false;
     vidaAtual = vidaMaxima;
+    lifeHUD.AtualizarVidas(vidaAtual);
     healthHUD.AtualizarHUD(vidaAtual);
     audio = GetComponent<AudioSource>();
     
@@ -191,23 +193,38 @@ public class PlayerController : MonoBehaviour
     // ================= DANO =================
 public void TomarDano(int dano)
 {
+    if (vidaAtual <= 0) return;
+
     vidaAtual -= dano;
     vidaAtual = Mathf.Clamp(vidaAtual, 0, vidaMaxima);
 
+    lifeHUD.AtualizarVidas(vidaAtual);
     anim.SetTrigger("hurt");
-    healthHUD.AtualizarHUD(vidaAtual);
 
     if (vidaAtual <= 0)
         Morrer();
 }
 
+
     // ================= MORRER =================
+public void MorrerInstantaneamente()
+{
+    if (vidaAtual <= 0) return;
+
+    vidaAtual = 0;
+    lifeHUD.AtualizarVidas(vidaAtual);
+    Morrer();
+}
+
 void Morrer()
 {
     anim.SetTrigger("death");
     rb.linearVelocity = Vector2.zero;
     this.enabled = false;
+
+    GameOverManager.Instance.MostrarGameOver();
 }
+
     // ================= DANO INIMIGO =================
 private void OnCollisionEnter2DEnemy(Collision2D collision)
 {
@@ -219,17 +236,17 @@ private void OnCollisionEnter2DEnemy(Collision2D collision)
 
 public void TocarPasso()
 {
-    if (!estaNoChao || abaixado) return;
+    if (!estaNoChao || abaixado || sonsPasso.Length == 0) return;
 
     AudioSource audio = GetComponent<AudioSource>();
     audio.pitch = Random.Range(0.95f, 1.05f);
-    audio.clip = sonsPasso[Random.Range(0, sonsPasso.Length)];
-    audio.Play();
+    audio.PlayOneShot(sonsPasso[Random.Range(0, sonsPasso.Length)]);
 }
 
 public void TocarTiro()
 {
     GetComponent<AudioSource>().PlayOneShot(somTiro);
 }
+
 
 }

@@ -2,55 +2,31 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public float velocidade = 2f;
-    public int dano = 1;
+    public int vida = 3;
 
-    public Transform pontoChao;
-    public LayerMask layerChao;
-
-    private Rigidbody2D rb;
-    private bool indoDireita = true;
+    private Animator anim;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
-    void Update()
+    public void TomarDano(int dano)
     {
-        rb.linearVelocity = new Vector2(
-            (indoDireita ? 1 : -1) * velocidade,
-            rb.linearVelocity.y
-        );
+        vida -= dano;
 
-        bool temChao = Physics2D.Raycast(
-            pontoChao.position,
-            Vector2.down,
-            0.2f,
-            layerChao
-        );
+        if (anim != null)
+            anim.SetTrigger("hurt");
 
-        if (!temChao)
-            Virar();
+        if (vida <= 0)
+            Morrer();
     }
 
-    void Virar()
+    void Morrer()
     {
-        indoDireita = !indoDireita;
-        transform.localScale = new Vector3(
-            -transform.localScale.x,
-            1,
-            1
-        );
-    }
+        if (anim != null)
+            anim.SetTrigger("death");
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            collision.gameObject
-                .GetComponent<PlayerController>()
-                .TomarDano(dano);
-        }
+        Destroy(gameObject, 0.2f);
     }
 }

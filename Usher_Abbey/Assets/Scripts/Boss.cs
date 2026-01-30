@@ -20,17 +20,21 @@ public class BossController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private bool morto;
-    public AudioClip musicaBoss;
+    [Header("Música do Boss")]
+    public AudioSource musicaBoss;
+    public int prioridadeMusicaBoss = 2;
+
 
 void OnEnable()
 {
     MusicManager.Instance.PlayMusic(musicaBoss, 2);
+
 }
 
 void OnDestroy()
-{
-    MusicManager.Instance.StopMusic(2);
-}
+    {
+        MusicManager.Instance.StopMusic(musicaBoss, prioridadeMusicaBoss);
+    }
 
 
     void Start()
@@ -39,6 +43,7 @@ void OnDestroy()
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponentInChildren<Animator>();
         vidaAtual = vidaMaxima;
+        MusicManager.Instance.PlayMusic(musicaBoss, prioridadeMusicaBoss);
     }
 
     void Update()

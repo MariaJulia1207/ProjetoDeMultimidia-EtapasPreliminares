@@ -41,6 +41,7 @@ public class MenuPrincipal : MonoBehaviour
 
     public void BotaoSair()
     {
+        Debug.Log("Botão Sair apertado");
         Application.Quit();
     }
 }
