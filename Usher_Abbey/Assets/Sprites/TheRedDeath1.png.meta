@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: a4b74fb81933b0541a0501fcf70156fb
+guid: 5881a0de43f9f6f41812b1133bd7159e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6725009650027075832
-    second: roderick_bolger_1 1_0
-  - first:
-      213: -826681896849441746
-    second: roderick_bolger_1 1_1
-  - first:
-      213: -7581741991097375039
-    second: roderick_bolger_1 1_2
+      213: 7737700182243067930
+    second: TheRedDeath1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -132,67 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: roderick_bolger_1 1_0
+      name: TheRedDeath1_0
       rect:
         serializedVersion: 2
-        x: 63
-        y: 168
-        width: 130
-        height: 305
+        x: 15
+        y: 15
+        width: 66
+        height: 66
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 807ef0b9a57fba2a0800000000000000
-      internalID: -6725009650027075832
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: roderick_bolger_1 1_1
-      rect:
-        serializedVersion: 2
-        x: 319
-        y: 168
-        width: 138
-        height: 305
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e2cfa0cd1390784f0800000000000000
-      internalID: -826681896849441746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: roderick_bolger_1 1_2
-      rect:
-        serializedVersion: 2
-        x: 559
-        y: 168
-        width: 154
-        height: 305
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c66af134dd38c690800000000000000
-      internalID: -7581741991097375039
+      spriteID: a18c215d155d16b60800000000000000
+      internalID: 7737700182243067930
       vertices: []
       indices: 
       edges: []
@@ -201,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 24d81c89a27798f4a810894d70912f8a
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -210,10 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      roderick_bolger_1 1_0: -6725009650027075832
-      roderick_bolger_1 1_1: -826681896849441746
-      roderick_bolger_1 1_2: -7581741991097375039
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

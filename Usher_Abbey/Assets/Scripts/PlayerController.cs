@@ -26,10 +26,6 @@ public class PlayerController : MonoBehaviour
     public int vidaMaxima = 5;
     private int vidaAtual;
 
-    [Header("HUD")]
-    public HealthHUD healthHUD;
-    public LifeHUD lifeHUD;
-
     private Rigidbody2D rb;
     private Animator anim;
 
@@ -43,6 +39,7 @@ public class PlayerController : MonoBehaviour
     [Header("Áudio - Passos")]
     public AudioClip[] sonsPasso;
 
+   
 
 
     void Start()
@@ -54,8 +51,7 @@ public class PlayerController : MonoBehaviour
     colliderEmPe.enabled = true;
     colliderAbaixado.enabled = false;
     vidaAtual = vidaMaxima;
-    lifeHUD.AtualizarVidas(vidaAtual);
-    healthHUD.AtualizarHUD(vidaAtual);
+    vidaHUD.AtualizarVidas(vidaAtual);
     audio = GetComponent<AudioSource>();
     
 
@@ -198,21 +194,19 @@ public void TomarDano(int dano)
     vidaAtual -= dano;
     vidaAtual = Mathf.Clamp(vidaAtual, 0, vidaMaxima);
 
-    lifeHUD.AtualizarVidas(vidaAtual);
+    vidaHUD.AtualizarVidas(vidaAtual);
     anim.SetTrigger("hurt");
 
     if (vidaAtual <= 0)
         Morrer();
 }
 
-
-    // ================= MORRER =================
 public void MorrerInstantaneamente()
 {
     if (vidaAtual <= 0) return;
 
     vidaAtual = 0;
-    lifeHUD.AtualizarVidas(vidaAtual);
+    vidaHUD.AtualizarVidas(vidaAtual);
     Morrer();
 }
 
