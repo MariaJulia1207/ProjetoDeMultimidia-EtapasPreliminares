@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TheRedDeath1_0: 7737700182243067930
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

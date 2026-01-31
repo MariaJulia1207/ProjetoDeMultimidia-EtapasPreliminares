@@ -2,21 +2,22 @@ using UnityEngine;
 
 public class Projetil : MonoBehaviour
 {
+    [Header("Configurações")]
     public float velocidade = 10f;
     public int dano = 1;
+    public float tempoDeVida = 3f;
 
     [Header("Áudio")]
     public AudioClip somExplosaoPequena;
-    public AudioClip somExplosao;
     public AudioClip somChiadoAgudo;
     public AudioClip somChiadoGrave;
 
-    private AudioSource audioSource;
     private float direcao = 1f;
+    private bool jaColidiu;
 
-    void Awake()
+    void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        Destroy(gameObject, tempoDeVida);
     }
 
     public void DefinirDirecao(float dir)
@@ -32,21 +33,20 @@ public class Projetil : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // ===== SUPERFÍCIE SÓLIDA =====
-        if (collision.CompareTag("Ground"))
-        {
-            TocarSom(somExplosaoPequena);
-            Destroy(gameObject);
-            return;
-        }
+        if (jaColidiu) return;
+
+        // ❌ ignora o próprio player
+        if (collision.CompareTag("Player")) return;
+
+        jaColidiu = true;
 
         // ===== INIMIGO COMUM =====
         if (collision.CompareTag("Enemy"))
         {
-            TocarSom(somExplosao);
+            TocarSom(somExplosaoPequena);
             TocarSom(somChiadoAgudo);
 
-            collision.GetComponentInParent<Enemy>()?.TomarDano(dano);
+            collision.GetComponent<Enemy>()?.TomarDano(dano);
             Destroy(gameObject);
             return;
         }
@@ -57,7 +57,15 @@ public class Projetil : MonoBehaviour
             TocarSom(somExplosaoPequena);
             TocarSom(somChiadoGrave);
 
-            collision.GetComponentInParent<Boss>()?.TomarDano(dano);
+            collision.GetComponent<Boss>()?.TomarDano(dano);
+            Destroy(gameObject);
+            return;
+        }
+
+        // ===== CHÃO / PAREDE =====
+        if (collision.CompareTag("Ground"))
+        {
+            TocarSom(somExplosaoPequena);
             Destroy(gameObject);
         }
     }

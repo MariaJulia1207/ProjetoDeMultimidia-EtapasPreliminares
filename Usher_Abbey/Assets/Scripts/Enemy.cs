@@ -1,29 +1,20 @@
 using UnityEngine;
 
-public class Boss : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
-    [Header("Movimento")]
     public Transform pontoA;
     public Transform pontoB;
     public float velocidade = 2f;
+    public int vida = 3;
+    public int danoContato = 1;
 
-    [Header("Ataque")]
-    public GameObject projetilPrefab;
-    public Transform pontoDisparo;
-    public float tempoEntreTiros = 2f;
-
-    [Header("Vida")]
-    public int vida = 10;
-
-    [Header("Áudio")]
     public AudioSource audioSource;
     public AudioClip somPasso;
-    public AudioClip somDano;
     public AudioClip somMorte;
+    public AudioClip somDano;
 
     private Transform alvoAtual;
     private Animator anim;
-    private float timerTiro;
     private bool morto;
 
     void Start()
@@ -36,50 +27,14 @@ public class Boss : MonoBehaviour
     {
         if (morto) return;
 
-        Andar();
-        Atacar();
-    }
-
-    void Andar()
-    {
         transform.position = Vector2.MoveTowards(
             transform.position,
             alvoAtual.position,
             velocidade * Time.deltaTime
         );
 
-        anim.SetBool("walking", true);
-
         if (Vector2.Distance(transform.position, alvoAtual.position) < 0.1f)
-        {
             alvoAtual = alvoAtual == pontoA ? pontoB : pontoA;
-            transform.localScale = new Vector3(
-                Mathf.Sign(alvoAtual.position.x - transform.position.x),
-                1,
-                1
-            );
-        }
-    }
-
-    void Atacar()
-    {
-        timerTiro += Time.deltaTime;
-
-        if (timerTiro >= tempoEntreTiros)
-        {
-            anim.SetTrigger("attack");
-
-            GameObject proj = Instantiate(
-                projetilPrefab,
-                pontoDisparo.position,
-                Quaternion.identity
-            );
-
-            proj.GetComponent<BossProjectile>()
-                .DefinirDirecao(transform.localScale.x);
-
-            timerTiro = 0f;
-        }
     }
 
     public void TomarDano(int dano)
@@ -100,13 +55,20 @@ public class Boss : MonoBehaviour
         anim.SetTrigger("death");
         audioSource.PlayOneShot(somMorte);
         GetComponent<Collider2D>().enabled = false;
-        this.enabled = false;
     }
 
     // Animation Event
-    public void TocarPasso()
+    public void Destruir()
     {
-        audioSource.PlayOneShot(somPasso);
+        Destroy(gameObject);
+    }
+
+    // 🔥 DANO POR CONTATO
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+            collision.gameObject
+                .GetComponent<PlayerController>()
+                ?.TomarDano(danoContato);
     }
 }
-

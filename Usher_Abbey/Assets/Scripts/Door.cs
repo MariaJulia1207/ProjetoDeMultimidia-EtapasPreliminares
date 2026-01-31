@@ -2,47 +2,27 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public AudioClip somAbrirPorta;
+    public AudioSource audioSource;
+    public AudioClip somAbrir;
 
     private Animator anim;
-    private Collider2D colliderFisico;
     private bool aberta;
 
     void Start()
     {
-        anim = GetComponentInParent<Animator>();
-        colliderFisico = GetComponentInParent<Collider2D>();
+        anim = GetComponent<Animator>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (aberta) return;
 
-        if (collision.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            PlayerKey playerKey = collision.GetComponent<PlayerKey>();
-Debug.Log("Colidiu");
-            if (playerKey != null && playerKey.temChave)
-            {
-                AbrirPorta();
-                playerKey.UsarChave();
-            }
+            aberta = true;
+            anim.SetTrigger("open");
+            audioSource.PlayOneShot(somAbrir);
+            GetComponent<Collider2D>().enabled = false;
         }
-    }
-
-    void AbrirPorta()
-    {
-        aberta = true;
-
-        anim.SetTrigger("open");
-
-        if (somAbrirPorta != null)
-            AudioSource.PlayClipAtPoint(somAbrirPorta, transform.position);
-    }
-
-    // chamado pelo Animation Event
-    public void DesativarCollider()
-    {
-        colliderFisico.enabled = false;
     }
 }

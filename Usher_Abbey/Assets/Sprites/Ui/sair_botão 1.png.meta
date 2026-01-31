@@ -1,22 +1,28 @@
 fileFormatVersion: 2
-guid: 50f808fbc53754d40b735bde5e89ba6d
+guid: 61ef7c49793388044897b6f4eaf89ce3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1446459398380425890
-    second: Porta_0
+      213: -7982969747450355779
+    second: "sair_bot\xE3o 1_0"
   - first:
-      213: 8075468225096633940
-    second: Porta_1
+      213: -2748357904409251417
+    second: "sair_bot\xE3o 1_1"
   - first:
-      213: 4264626265770157611
-    second: Porta_2
+      213: 8124899415820516784
+    second: "sair_bot\xE3o 1_2"
   - first:
-      213: -6850833623076930402
-    second: Porta_3
+      213: -6870132129307249440
+    second: "sair_bot\xE3o 1_3"
   - first:
-      213: -6029608551088276881
-    second: Porta_4
+      213: -5757493530154751055
+    second: "sair_bot\xE3o 1_4"
+  - first:
+      213: -5642123849027701716
+    second: "sair_bot\xE3o 1_5"
+  - first:
+      213: -8277108010136230752
+    second: "sair_bot\xE3o 1_6"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -58,7 +64,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 3
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,141 +114,159 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Porta_0
+      name: "sair_bot\xE3o 1_0"
       rect:
         serializedVersion: 2
-        x: 0
-        y: 71
-        width: 510
-        height: 546
+        x: 511
+        y: 113
+        width: 149
+        height: 224
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5d628147d42debe0800000000000000
-      internalID: -1446459398380425890
+      spriteID: dbf188e6f4bc63190800000000000000
+      internalID: -7982969747450355779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Porta_1
+      name: "sair_bot\xE3o 1_1"
       rect:
         serializedVersion: 2
-        x: 510
-        y: 72
-        width: 510
-        height: 546
+        x: 661
+        y: 143
+        width: 119
+        height: 149
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 45ec6d7a093d11070800000000000000
-      internalID: 8075468225096633940
+      spriteID: 7a1bc002c0fdbd9d0800000000000000
+      internalID: -2748357904409251417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Porta_2
+      name: "sair_bot\xE3o 1_2"
       rect:
         serializedVersion: 2
-        x: 1020
-        y: 72
-        width: 510
-        height: 546
+        x: 796
+        y: 278
+        width: 59
+        height: 59
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b26e7076efefe2b30800000000000000
-      internalID: 4264626265770157611
+      spriteID: 0bdb2cb98f071c070800000000000000
+      internalID: 8124899415820516784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Porta_3
+      name: "sair_bot\xE3o 1_3"
       rect:
         serializedVersion: 2
-        x: 1530
-        y: 72
-        width: 510
-        height: 546
+        x: 856
+        y: 128
+        width: 104
+        height: 164
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e9c7239fd13fce0a0800000000000000
-      internalID: -6850833623076930402
+      spriteID: 0e4b4a85a3368a0a0800000000000000
+      internalID: -6870132129307249440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Porta_4
+      name: "sair_bot\xE3o 1_4"
       rect:
         serializedVersion: 2
-        x: 2050
-        y: 72
-        width: 510
-        height: 546
+        x: 241
+        y: 143
+        width: 179
+        height: 89
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f6ab9b118f6825ca0800000000000000
-      internalID: -6029608551088276881
+      spriteID: 1bb248a83264910b0800000000000000
+      internalID: -5757493530154751055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sair_bot\xE3o 1_5"
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 113
+        width: 74
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c24b1f7a04623b1b0800000000000000
+      internalID: -5642123849027701716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "sair_bot\xE3o 1_6"
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 143
+        width: 179
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a42a486e1ec12d80800000000000000
+      internalID: -8277108010136230752
       vertices: []
       indices: 
       edges: []
@@ -251,7 +275,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a0dee42659e3d004c93dfeeaa54811be
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -261,11 +285,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Porta_0: -1446459398380425890
-      Porta_1: 8075468225096633940
-      Porta_2: 4264626265770157611
-      Porta_3: -6850833623076930402
-      Porta_4: -6029608551088276881
+      "sair_bot\xE3o 1_0": -7982969747450355779
+      "sair_bot\xE3o 1_1": -2748357904409251417
+      "sair_bot\xE3o 1_2": 8124899415820516784
+      "sair_bot\xE3o 1_3": -6870132129307249440
+      "sair_bot\xE3o 1_4": -5757493530154751055
+      "sair_bot\xE3o 1_5": -5642123849027701716
+      "sair_bot\xE3o 1_6": -8277108010136230752
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

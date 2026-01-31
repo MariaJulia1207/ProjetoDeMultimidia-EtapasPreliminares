@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 
 public class MusicAreaBoss : MonoBehaviour
 {
@@ -31,3 +31,4 @@ public class MusicAreaBoss : MonoBehaviour
             MusicManager.Instance.PararMusica(musicaBoss, prioridade);
     }
 }
+*/

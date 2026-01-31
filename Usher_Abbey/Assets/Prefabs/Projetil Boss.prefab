@@ -16,9 +16,9 @@ GameObject:
   - component: {fileID: 7061250908979166791}
   - component: {fileID: -3110603216567968291}
   - component: {fileID: 9197889046370962878}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Projetil Boss
-  m_TagString: Untagged
+  m_TagString: Projectible
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -185,7 +185,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773378436441708361}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

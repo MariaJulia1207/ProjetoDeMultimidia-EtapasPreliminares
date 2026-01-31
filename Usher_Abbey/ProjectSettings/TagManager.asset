@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Ground
   - Boss
+  - Projectible
+  - Door
   layers:
   - Default
   - TransparentFX
@@ -18,12 +20,12 @@ TagManager:
   - Player
   - Enemy
   - Boss
-  - Projectile
+  - ProjectilePlayer
   - PlayerCollect
   - Hazard
   - Collectable
-  - 
-  - 
+  - Enviroment
+  - ProjectileEnemy
   - 
   - 
   - 

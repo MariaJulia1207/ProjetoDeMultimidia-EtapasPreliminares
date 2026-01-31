@@ -8,5 +8,10 @@ public class LifeHUD : MonoBehaviour
     public void AtualizarVidas(int vidas)
     {
         textoVidas.text = "Vidas = " + vidas;
+
+        if (vidas <= 0)
+        {
+            GameOverManager.Instance.MostrarGameOver();
+        }
     }
 }

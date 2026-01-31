@@ -26,6 +26,10 @@ public class PlayerController : MonoBehaviour
     public int vidaMaxima = 5;
     private int vidaAtual;
 
+    [Header("HUD")]
+    public LifeHUD lifeHUD;
+
+
     private Rigidbody2D rb;
     private Animator anim;
 
@@ -51,7 +55,7 @@ public class PlayerController : MonoBehaviour
     colliderEmPe.enabled = true;
     colliderAbaixado.enabled = false;
     vidaAtual = vidaMaxima;
-    vidaHUD.AtualizarVidas(vidaAtual);
+    lifeHUD.AtualizarVidas(vidaAtual);
     audio = GetComponent<AudioSource>();
     
 
@@ -147,20 +151,14 @@ public class PlayerController : MonoBehaviour
     {
         anim.SetTrigger("shoot");
 
-        // Instancia o projétil
         GameObject proj = Instantiate(
             projetilPrefab,
             pontoDisparo.position,
             Quaternion.identity
         );
 
-        // Define a direção baseada no lado que o player está olhando
         float direcao = transform.localScale.x;
 
-        // Ajusta escala do projétil (espelha se necessário)
-        proj.transform.localScale = new Vector3(direcao, 1, 1);
-
-        // Envia a direção para o projétil
         proj.GetComponent<Projetil>().DefinirDirecao(direcao);
     }
 }
@@ -192,13 +190,15 @@ public void TomarDano(int dano)
     if (vidaAtual <= 0) return;
 
     vidaAtual -= dano;
-    vidaAtual = Mathf.Clamp(vidaAtual, 0, vidaMaxima);
+vidaAtual = Mathf.Clamp(vidaAtual, 0, vidaMaxima);
 
-    vidaHUD.AtualizarVidas(vidaAtual);
-    anim.SetTrigger("hurt");
+lifeHUD.AtualizarVidas(vidaAtual);
 
-    if (vidaAtual <= 0)
-        Morrer();
+anim.SetTrigger("hurt");
+
+if (vidaAtual <= 0)
+    Morrer();
+
 }
 
 public void MorrerInstantaneamente()
@@ -206,8 +206,9 @@ public void MorrerInstantaneamente()
     if (vidaAtual <= 0) return;
 
     vidaAtual = 0;
-    vidaHUD.AtualizarVidas(vidaAtual);
-    Morrer();
+lifeHUD.AtualizarVidas(vidaAtual);
+Morrer();
+
 }
 
 void Morrer()
@@ -216,6 +217,11 @@ void Morrer()
     rb.linearVelocity = Vector2.zero;
     this.enabled = false;
 
+    GameOverManager.Instance.MostrarGameOver();
+}
+
+public void FinalizarMorte()
+{
     GameOverManager.Instance.MostrarGameOver();
 }
 

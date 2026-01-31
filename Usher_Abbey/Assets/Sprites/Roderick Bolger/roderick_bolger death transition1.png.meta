@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 50f808fbc53754d40b735bde5e89ba6d
+guid: ce4d2f6ded998c540bf1d7ed6236b8b6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1446459398380425890
-    second: Porta_0
+      213: -7941576677676190246
+    second: roderick_bolger death transition1_0
   - first:
-      213: 8075468225096633940
-    second: Porta_1
+      213: -1423322172187489292
+    second: roderick_bolger death transition1_1
   - first:
-      213: 4264626265770157611
-    second: Porta_2
+      213: 5167335907278410785
+    second: roderick_bolger death transition1_2
   - first:
-      213: -6850833623076930402
-    second: Porta_3
+      213: 8938287248148896213
+    second: roderick_bolger death transition1_3
   - first:
-      213: -6029608551088276881
-    second: Porta_4
+      213: 6579371945667510909
+    second: roderick_bolger death transition1_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -108,43 +108,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Porta_0
+      name: roderick_bolger death transition1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 71
-        width: 510
-        height: 546
+        y: 160
+        width: 136
+        height: 305
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5d628147d42debe0800000000000000
-      internalID: -1446459398380425890
+      spriteID: ad57592861ad9c190800000000000000
+      internalID: -7941576677676190246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Porta_1
+      name: roderick_bolger death transition1_1
       rect:
         serializedVersion: 2
-        x: 510
-        y: 72
-        width: 510
-        height: 546
+        x: 136
+        y: 160
+        width: 152
+        height: 305
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 45ec6d7a093d11070800000000000000
-      internalID: 8075468225096633940
+      spriteID: 4fbc3d586085f3ce0800000000000000
+      internalID: -1423322172187489292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Porta_2
+      name: roderick_bolger death transition1_2
       rect:
         serializedVersion: 2
-        x: 1020
-        y: 72
-        width: 510
-        height: 546
+        x: 288
+        y: 160
+        width: 152
+        height: 305
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b26e7076efefe2b30800000000000000
-      internalID: 4264626265770157611
+      spriteID: 124537441a016b740800000000000000
+      internalID: 5167335907278410785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Porta_3
+      name: roderick_bolger death transition1_3
       rect:
         serializedVersion: 2
-        x: 1530
-        y: 72
-        width: 510
-        height: 546
+        x: 440
+        y: 160
+        width: 152
+        height: 305
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e9c7239fd13fce0a0800000000000000
-      internalID: -6850833623076930402
+      spriteID: 5d9915625ec2b0c70800000000000000
+      internalID: 8938287248148896213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Porta_4
+      name: roderick_bolger death transition1_4
       rect:
         serializedVersion: 2
-        x: 2050
-        y: 72
-        width: 510
-        height: 546
+        x: 592
+        y: 160
+        width: 152
+        height: 305
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f6ab9b118f6825ca0800000000000000
-      internalID: -6029608551088276881
+      spriteID: d72cea2fcef9e4b50800000000000000
+      internalID: 6579371945667510909
       vertices: []
       indices: 
       edges: []
@@ -251,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a0dee42659e3d004c93dfeeaa54811be
+    spriteID: 3e6148b5ba4efa44e87aa8177171e1ea
     internalID: 0
     vertices: []
     indices: 
@@ -261,11 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Porta_0: -1446459398380425890
-      Porta_1: 8075468225096633940
-      Porta_2: 4264626265770157611
-      Porta_3: -6850833623076930402
-      Porta_4: -6029608551088276881
+      roderick_bolger death transition1_0: -7941576677676190246
+      roderick_bolger death transition1_1: -1423322172187489292
+      roderick_bolger death transition1_2: 5167335907278410785
+      roderick_bolger death transition1_3: 8938287248148896213
+      roderick_bolger death transition1_4: 6579371945667510909
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
