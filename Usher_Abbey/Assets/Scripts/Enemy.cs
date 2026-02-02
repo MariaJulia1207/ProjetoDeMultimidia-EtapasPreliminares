@@ -34,7 +34,16 @@ public class Enemy : MonoBehaviour
         );
 
         if (Vector2.Distance(transform.position, alvoAtual.position) < 0.1f)
-            alvoAtual = alvoAtual == pontoA ? pontoB : pontoA;
+{
+    if (alvoAtual == pontoA)
+        alvoAtual = pontoB;
+    else
+        alvoAtual = pontoA;
+
+    float direcao = Mathf.Sign(alvoAtual.position.x - transform.position.x);
+    transform.localScale = new Vector3(direcao, 1, 1);
+}
+
     }
 
     public void TomarDano(int dano)
@@ -44,6 +53,8 @@ public class Enemy : MonoBehaviour
         vida -= dano;
         anim.SetTrigger("hurt");
         audioSource.PlayOneShot(somDano);
+        GetComponent<DamageFlash>()?.Flash();
+
 
         if (vida <= 0)
             Morrer();

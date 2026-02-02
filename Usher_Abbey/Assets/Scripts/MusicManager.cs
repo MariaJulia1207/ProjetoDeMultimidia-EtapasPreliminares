@@ -5,46 +5,32 @@ public class MusicManager : MonoBehaviour
     public static MusicManager Instance;
 
     private AudioSource musicaAtual;
-    private int prioridadeAtual = -1;
 
     void Awake()
     {
         if (Instance == null)
-        {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
         else
-        {
             Destroy(gameObject);
-        }
     }
 
-    public void TocarMusica(AudioSource novaMusica, int prioridade)
+    public void Tocar(AudioSource musica)
     {
-        if (novaMusica == null) return;
-
-        // Não troca se a música atual tiver prioridade maior
-        if (prioridade < prioridadeAtual) return;
-
-        if (musicaAtual == novaMusica) return;
+        if (musicaAtual == musica) return;
 
         if (musicaAtual != null)
             musicaAtual.Stop();
 
-        musicaAtual = novaMusica;
-        prioridadeAtual = prioridade;
-
+        musicaAtual = musica;
         musicaAtual.Play();
     }
 
-    public void PararMusica(AudioSource musica, int prioridade)
+    public void Parar(AudioSource musica)
     {
-        if (musicaAtual != musica) return;
-        if (prioridade < prioridadeAtual) return;
-
-        musicaAtual.Stop();
-        musicaAtual = null;
-        prioridadeAtual = -1;
+        if (musicaAtual == musica)
+        {
+            musicaAtual.Stop();
+            musicaAtual = null;
+        }
     }
 }

@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 
 public class MusicAreaMain : MonoBehaviour
 {
@@ -10,3 +10,4 @@ public class MusicAreaMain : MonoBehaviour
         MusicManager.Instance.TocarMusica(musicaPrincipal, prioridade);
     }
 }
+*/

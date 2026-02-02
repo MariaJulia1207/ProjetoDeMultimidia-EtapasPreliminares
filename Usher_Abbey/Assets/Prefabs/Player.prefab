@@ -254,6 +254,7 @@ GameObject:
   - component: {fileID: 6783069112006034119}
   - component: {fileID: 8022694272053299811}
   - component: {fileID: 867158294491342668}
+  - component: {fileID: 2913352378914329210}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -407,7 +408,6 @@ MonoBehaviour:
   colliderEmPe: {fileID: 2462305090571461876}
   colliderAbaixado: {fileID: 2699841078373170988}
   vidaMaxima: 5
-  healthHUD: {fileID: 0}
   lifeHUD: {fileID: 0}
   somTiro: {fileID: 8300000, guid: 2d9ad4f62e076bd42b5972d86b65448d, type: 3}
   sonsPasso:
@@ -416,6 +416,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b2356ee92e27ddc448e0fed772259346, type: 3}
   - {fileID: 8300000, guid: b2356ee92e27ddc448e0fed772259346, type: 3}
   - {fileID: 8300000, guid: b2356ee92e27ddc448e0fed772259346, type: 3}
+  somImpactoMorte: {fileID: 8300000, guid: ab4915c0e9e35ca499b0d3a8a526e9ff, type: 3}
 --- !u!114 &6783069112006034119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -622,6 +623,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2913352378914329210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7683631120701928030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c83a2cb4b922f684282d63f16df9e26a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempoFlash: 0.1
 --- !u!1 &8454869775739845239
 GameObject:
   m_ObjectHideFlags: 0

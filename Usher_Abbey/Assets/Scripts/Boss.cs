@@ -23,8 +23,11 @@ public class Boss : MonoBehaviour
 
     private Transform alvoAtual;
     private Animator anim;
-    private float timerTiro;
     private bool morto;
+
+    private bool jogadorNaArea;
+private float tempoTiro;
+
 
     void Start()
     {
@@ -36,7 +39,9 @@ public class Boss : MonoBehaviour
     {
         if (morto) return;
 
-        Andar();
+    Andar();
+
+    if (jogadorNaArea)
         Atacar();
     }
 
@@ -51,35 +56,37 @@ public class Boss : MonoBehaviour
         anim.SetBool("walking", true);
 
         if (Vector2.Distance(transform.position, alvoAtual.position) < 0.1f)
-        {
-            alvoAtual = alvoAtual == pontoA ? pontoB : pontoA;
-            transform.localScale = new Vector3(
-                Mathf.Sign(alvoAtual.position.x - transform.position.x),
-                1,
-                1
-            );
-        }
+{
+    if (alvoAtual == pontoA)
+        alvoAtual = pontoB;
+    else
+        alvoAtual = pontoA;
+
+    float direcao = Mathf.Sign(alvoAtual.position.x - transform.position.x);
+    transform.localScale = new Vector3(direcao, 1, 1);
+}
+
     }
 
     void Atacar()
     {
-        timerTiro += Time.deltaTime;
+        tempoTiro += Time.deltaTime;
 
-        if (timerTiro >= tempoEntreTiros)
-        {
-            anim.SetTrigger("attack");
+    if (tempoTiro >= 2f)
+    {
+        anim.SetTrigger("attack");
 
-            GameObject proj = Instantiate(
-                projetilPrefab,
-                pontoDisparo.position,
-                Quaternion.identity
-            );
+        GameObject proj = Instantiate(
+            projetilPrefab,
+            pontoDisparo.position,
+            Quaternion.identity
+        );
 
-            proj.GetComponent<BossProjectile>()
-                .DefinirDirecao(transform.localScale.x);
+        proj.GetComponent<BossProjectile>()
+            .DefinirDirecao(transform.localScale.x);
 
-            timerTiro = 0f;
-        }
+        tempoTiro = 0f;
+    }
     }
 
     public void TomarDano(int dano)
@@ -89,6 +96,8 @@ public class Boss : MonoBehaviour
         vida -= dano;
         anim.SetTrigger("hurt");
         audioSource.PlayOneShot(somDano);
+        GetComponent<DamageFlash>()?.Flash();
+
 
         if (vida <= 0)
             Morrer();
@@ -108,5 +117,12 @@ public class Boss : MonoBehaviour
     {
         audioSource.PlayOneShot(somPasso);
     }
+
+    public void JogadorNaArea(bool estado)
+{
+    jogadorNaArea = estado;
+}
+
+
 }
 

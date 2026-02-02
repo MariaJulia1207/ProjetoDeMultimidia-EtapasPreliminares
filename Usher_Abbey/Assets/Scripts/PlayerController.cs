@@ -26,8 +26,12 @@ public class PlayerController : MonoBehaviour
     public int vidaMaxima = 5;
     private int vidaAtual;
 
-    [Header("HUD")]
-    public LifeHUD lifeHUD;
+    [SerializeField] private SpriteRenderer sprite;
+[SerializeField] private LifeHUD lifeHUD;
+
+private bool morto;
+private Color corOriginal;
+
 
 
     private Rigidbody2D rb;
@@ -43,7 +47,10 @@ public class PlayerController : MonoBehaviour
     [Header("Áudio - Passos")]
     public AudioClip[] sonsPasso;
 
-   
+
+
+[Header("Áudio - Morte")]
+public AudioClip somImpactoMorte;
 
 
     void Start()
@@ -51,25 +58,30 @@ public class PlayerController : MonoBehaviour
     rb = GetComponent<Rigidbody2D>();
     anim = GetComponent<Animator>();
     rb.gravityScale = gravidadeNormal;
+    audio = GetComponent<AudioSource>();
     
     colliderEmPe.enabled = true;
     colliderAbaixado.enabled = false;
     vidaAtual = vidaMaxima;
+    corOriginal = sprite.color;
     lifeHUD.AtualizarVidas(vidaAtual);
-    audio = GetComponent<AudioSource>();
     
 
 }
 
 
     void Update()
-    {
-        Movimento();
-        Abaixar();
-        AtualizarCoyoteTime();
-        Pulo();
-        Atirar();
-    }
+{
+    if (morto) return;
+
+    Movimento();
+    Abaixar();
+    AtualizarCoyoteTime();
+    Pulo();
+    Atirar();
+}
+
+
 
     // ================= MOVIMENTO =================
     void Movimento()
@@ -187,43 +199,63 @@ public class PlayerController : MonoBehaviour
     // ================= DANO =================
 public void TomarDano(int dano)
 {
-    if (vidaAtual <= 0) return;
+    if (morto) return;
 
     vidaAtual -= dano;
-vidaAtual = Mathf.Clamp(vidaAtual, 0, vidaMaxima);
+    vidaAtual = Mathf.Max(vidaAtual, 0);
 
-lifeHUD.AtualizarVidas(vidaAtual);
+    lifeHUD.AtualizarVidas(vidaAtual);
 
-anim.SetTrigger("hurt");
+    // Flash vermelho independente do estado
+    StartCoroutine(FlashVermelho());
 
-if (vidaAtual <= 0)
-    Morrer();
-
+    if (vidaAtual <= 0)
+        IniciarMorte();
 }
+
+
+
+
 
 public void MorrerInstantaneamente()
 {
-    if (vidaAtual <= 0) return;
+    if (morto) return;
 
     vidaAtual = 0;
-lifeHUD.AtualizarVidas(vidaAtual);
-Morrer();
-
+    lifeHUD.AtualizarVidas(vidaAtual);
+    Morrer();
 }
+
 
 void Morrer()
 {
-    anim.SetTrigger("death");
-    rb.linearVelocity = Vector2.zero;
-    this.enabled = false;
+    if (morto) return;
 
-    GameOverManager.Instance.MostrarGameOver();
+    morto = true;
+
+    rb.linearVelocity = Vector2.zero;
+    rb.gravityScale = gravidadeNormal;
+
+    anim.ResetTrigger("hurt");
+    anim.SetTrigger("death");
+
+    Debug.Log("Trigger death disparado");
+    Debug.Log("ENTROU EM MORRER()");
+    anim.SetTrigger("death");
+}
+
+public void DebugInicioMorte()
+{
+    Debug.Log("INICIO DA MORTE");
 }
 
 public void FinalizarMorte()
 {
+    Debug.Log("FINAL DA ANIMAÇÃO DE MORTE");
     GameOverManager.Instance.MostrarGameOver();
 }
+
+
 
     // ================= DANO INIMIGO =================
 private void OnCollisionEnter2DEnemy(Collision2D collision)
@@ -248,5 +280,10 @@ public void TocarTiro()
     GetComponent<AudioSource>().PlayOneShot(somTiro);
 }
 
+public void TocarImpactoMorte()
+{
+    if (somImpactoMorte != null)
+        audio.PlayOneShot(somImpactoMorte);
+}
 
 }

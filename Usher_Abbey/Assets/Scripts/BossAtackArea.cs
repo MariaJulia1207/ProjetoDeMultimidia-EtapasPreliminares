@@ -1,18 +1,23 @@
 using UnityEngine;
 
-public class MusicArea : MonoBehaviour
+public class BossAttackArea : MonoBehaviour
 {
-    public AudioSource musicaArea;
+    private Boss boss;
+
+    void Start()
+    {
+        boss = GetComponentInParent<Boss>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
-            MusicManager.Instance.Tocar(musicaArea);
+            boss.JogadorNaArea(true);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
-            MusicManager.Instance.Parar(musicaArea);
+            boss.JogadorNaArea(false);
     }
 }
