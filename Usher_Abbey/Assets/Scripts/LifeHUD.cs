@@ -7,11 +7,12 @@ public class LifeHUD : MonoBehaviour
 
     public void AtualizarVidas(int vidas)
     {
-        textoVidas.text = "Vidas = " + vidas;
-
-        if (vidas <= 0)
+        if (textoVidas == null)
         {
-            GameOverManager.Instance.MostrarGameOver();
+            Debug.LogError("LifeHUD: textoVidas NÃO está atribuído!");
+            return;
         }
+
+        textoVidas.text = "Vidas = " + vidas;
     }
 }

@@ -240,4 +240,13 @@ public class PlayerController : MonoBehaviour
         audio.pitch = Random.Range(0.95f, 1.05f);
         audio.PlayOneShot(sonsPasso[Random.Range(0, sonsPasso.Length)]);
     }
+    
+    public void TocarTiro()
+{
+    if (audio != null && somTiro != null)
+    {
+        audio.PlayOneShot(somTiro);
+    }
+}
+
 }
