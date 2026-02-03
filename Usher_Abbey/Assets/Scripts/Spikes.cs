@@ -2,19 +2,18 @@ using UnityEngine;
 
 public class Spikes : MonoBehaviour
 {
+    [Header("Dano")]
+    public int dano = 5;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (!collision.CompareTag("Player")) return;
+
+        PlayerController player = collision.GetComponent<PlayerController>();
+
+        if (player != null)
         {
-            PlayerController player =
-                collision.GetComponentInParent<PlayerController>();
-
-            if (player != null)
-            {
-                Debug.Log("Espinhos tocados por: " + collision.name);
-
-                player.MorrerInstantaneamente();
-            }
+            player.TomarDano(dano);
         }
     }
 }
