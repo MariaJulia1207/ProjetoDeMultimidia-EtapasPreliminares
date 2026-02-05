@@ -129,10 +129,10 @@ TextureImporter:
       name: TheRedDeath3_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 4
-        width: 89
-        height: 89
+        x: 0
+        y: 0
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

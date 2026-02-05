@@ -209,7 +209,7 @@ MonoBehaviour:
   vida: 3
   danoContato: 1
   audioSource: {fileID: 7765941899064511309}
-  somPasso: {fileID: 0}
+  somPasso: {fileID: 8300000, guid: b2356ee92e27ddc448e0fed772259346, type: 3}
   somMorte: {fileID: 8300000, guid: e2ae5f0bca8140640a374048e464d750, type: 3}
   somDano: {fileID: 8300000, guid: db8f81d4c1870724c8d839de4a58414d, type: 3}
 --- !u!82 &7765941899064511309
