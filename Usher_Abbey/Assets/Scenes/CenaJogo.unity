@@ -2150,6 +2150,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 297451686}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &484064086 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3244046420031420449, guid: d1f4a15666e30954890ff4fac9dbbd31, type: 3}
+  m_PrefabInstance: {fileID: 1146181144}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &484064095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484064086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175acb040452b53479a41f654754e365, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &496387529
 GameObject:
   m_ObjectHideFlags: 0
@@ -2324,6 +2341,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6748111315719262435, guid: dedb0f5dfae986a4ca7e8c20c031e6d0, type: 3}
+      propertyPath: somColeta
+      value: 
+      objectReference: {fileID: 8300000, guid: 51be26d832b224e41ac027c6253d265b, type: 3}
     - target: {fileID: 7202047512486867450, guid: dedb0f5dfae986a4ca7e8c20c031e6d0, type: 3}
       propertyPath: m_Name
       value: "Relic\xE1rio (3)"
@@ -58699,6 +58720,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6748111315719262435, guid: dedb0f5dfae986a4ca7e8c20c031e6d0, type: 3}
+      propertyPath: somColeta
+      value: 
+      objectReference: {fileID: 8300000, guid: 51be26d832b224e41ac027c6253d265b, type: 3}
     - target: {fileID: 7202047512486867450, guid: dedb0f5dfae986a4ca7e8c20c031e6d0, type: 3}
       propertyPath: m_Name
       value: "Relic\xE1rio (2)"
@@ -58894,6 +58919,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6748111315719262435, guid: dedb0f5dfae986a4ca7e8c20c031e6d0, type: 3}
+      propertyPath: somColeta
+      value: 
+      objectReference: {fileID: 8300000, guid: 51be26d832b224e41ac027c6253d265b, type: 3}
     - target: {fileID: 7202047512486867450, guid: dedb0f5dfae986a4ca7e8c20c031e6d0, type: 3}
       propertyPath: m_Name
       value: "Relic\xE1rio (5)"
@@ -59053,6 +59082,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6748111315719262435, guid: dedb0f5dfae986a4ca7e8c20c031e6d0, type: 3}
+      propertyPath: somColeta
+      value: 
+      objectReference: {fileID: 8300000, guid: 51be26d832b224e41ac027c6253d265b, type: 3}
     - target: {fileID: 7202047512486867450, guid: dedb0f5dfae986a4ca7e8c20c031e6d0, type: 3}
       propertyPath: m_Name
       value: "Relic\xE1rio (7)"
@@ -59616,7 +59649,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 0a58c616ea986db4abed893d5ea790bd, type: 3}
   m_Resource: {fileID: 8300000, guid: 0a58c616ea986db4abed893d5ea790bd, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.95
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -59624,7 +59657,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 52.543465
+  MinDistance: 22.981627
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -59709,7 +59742,7 @@ Transform:
   m_GameObject: {fileID: 745524856}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.165285, y: 1.312437, z: 0}
+  m_LocalPosition: {x: -20, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -60174,6 +60207,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1937586587}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &958833487 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3244046420031420449, guid: d1f4a15666e30954890ff4fac9dbbd31, type: 3}
+  m_PrefabInstance: {fileID: 2990676050368625264}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &959801637
 GameObject:
   m_ObjectHideFlags: 0
@@ -60623,6 +60661,7 @@ GameObject:
   - component: {fileID: 1121497920}
   - component: {fileID: 1121497927}
   - component: {fileID: 1121497928}
+  - component: {fileID: 1121497929}
   m_Layer: 8
   m_Name: Boss
   m_TagString: Boss
@@ -60695,7 +60734,7 @@ MonoBehaviour:
   pontoDisparo: {fileID: 167802318}
   tempoEntreTiros: 3
   vida: 20
-  audioSource: {fileID: 1121497922}
+  audioSource: {fileID: 1850317454}
   somPasso: {fileID: 0}
   somDano: {fileID: 8300000, guid: db8f81d4c1870724c8d839de4a58414d, type: 3}
   somMorte: {fileID: 8300000, guid: e2ae5f0bca8140640a374048e464d750, type: 3}
@@ -60709,8 +60748,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 20402df51e5f5854ab8efe35b6d2cb3a, type: 3}
+  m_Resource: {fileID: 8300000, guid: 20402df51e5f5854ab8efe35b6d2cb3a, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -60720,8 +60759,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 4
+  MaxDistance: 20
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -60756,7 +60795,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -60917,6 +60956,7 @@ Transform:
   - {fileID: 228962525}
   - {fileID: 1400164428}
   - {fileID: 667518065}
+  - {fileID: 2063264585}
   m_Father: {fileID: 2101160860}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1121497927
@@ -60953,6 +60993,18 @@ MonoBehaviour:
   somPasso: {fileID: 0}
   somMorte: {fileID: 8300000, guid: db8f81d4c1870724c8d839de4a58414d, type: 3}
   somDano: {fileID: 8300000, guid: e2ae5f0bca8140640a374048e464d750, type: 3}
+--- !u!114 &1121497929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121497919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175acb040452b53479a41f654754e365, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1139190384 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 728813700240185752, guid: dedb0f5dfae986a4ca7e8c20c031e6d0, type: 3}
@@ -60985,6 +61037,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 49460195}
     m_Modifications:
+    - target: {fileID: 1478707376196249112, guid: d1f4a15666e30954890ff4fac9dbbd31, type: 3}
+      propertyPath: MaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478707376196249112, guid: d1f4a15666e30954890ff4fac9dbbd31, type: 3}
+      propertyPath: MinDistance
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2691241157989000626, guid: d1f4a15666e30954890ff4fac9dbbd31, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.444
@@ -61032,7 +61092,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3244046420031420449, guid: d1f4a15666e30954890ff4fac9dbbd31, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 484064095}
   m_SourcePrefab: {fileID: 100100000, guid: d1f4a15666e30954890ff4fac9dbbd31, type: 3}
 --- !u!1 &1168920151
 GameObject:
@@ -61893,7 +61956,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1461808761
 Transform:
   m_ObjectHideFlags: 0
@@ -61903,7 +61966,7 @@ Transform:
   m_GameObject: {fileID: 1461808760}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11, y: 0, z: 0}
+  m_LocalPosition: {x: 11, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -61922,7 +61985,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: c2641d537a9d0ac488e036c98510d32a, type: 3}
   m_Resource: {fileID: 8300000, guid: c2641d537a9d0ac488e036c98510d32a, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -61930,7 +61993,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 14.943047
+  MinDistance: 10.930098
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -62460,7 +62523,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -6309474256520474822, guid: 71acd0673771af9408c8d37f3b01cf67, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 2.24, y: 3.2}
@@ -62733,7 +62796,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1500631757
 RectTransform:
   m_ObjectHideFlags: 0
@@ -63592,6 +63655,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6748111315719262435, guid: dedb0f5dfae986a4ca7e8c20c031e6d0, type: 3}
+      propertyPath: somColeta
+      value: 
+      objectReference: {fileID: 8300000, guid: 51be26d832b224e41ac027c6253d265b, type: 3}
     - target: {fileID: 7202047512486867450, guid: dedb0f5dfae986a4ca7e8c20c031e6d0, type: 3}
       propertyPath: m_Name
       value: "Relic\xE1rio (4)"
@@ -64134,7 +64201,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 0a58c616ea986db4abed893d5ea790bd, type: 3}
   m_Resource: {fileID: 8300000, guid: 0a58c616ea986db4abed893d5ea790bd, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.65
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -64618,6 +64685,135 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53eaa96338cfa374caab55152bb35085, type: 3}
+--- !u!1 &2063264584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2063264585}
+  - component: {fileID: 2063264586}
+  m_Layer: 8
+  m_Name: RedDeath
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2063264585
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063264584}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1121497926}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &2063264586
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063264584}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c2641d537a9d0ac488e036c98510d32a, type: 3}
+  m_Resource: {fileID: 8300000, guid: c2641d537a9d0ac488e036c98510d32a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 4
+  MaxDistance: 20
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &2088240705
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64670,6 +64866,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6748111315719262435, guid: dedb0f5dfae986a4ca7e8c20c031e6d0, type: 3}
+      propertyPath: somColeta
+      value: 
+      objectReference: {fileID: 8300000, guid: 51be26d832b224e41ac027c6253d265b, type: 3}
     - target: {fileID: 7202047512486867450, guid: dedb0f5dfae986a4ca7e8c20c031e6d0, type: 3}
       propertyPath: m_Name
       value: "Relic\xE1rio (6)"
@@ -65041,6 +65241,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6748111315719262435, guid: dedb0f5dfae986a4ca7e8c20c031e6d0, type: 3}
+      propertyPath: somColeta
+      value: 
+      objectReference: {fileID: 8300000, guid: 51be26d832b224e41ac027c6253d265b, type: 3}
     - target: {fileID: 7202047512486867450, guid: dedb0f5dfae986a4ca7e8c20c031e6d0, type: 3}
       propertyPath: m_Name
       value: "Relic\xE1rio (1)"
@@ -65142,6 +65346,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2691241157989000626, guid: d1f4a15666e30954890ff4fac9dbbd31, type: 3}
   m_PrefabInstance: {fileID: 2990676050368625264}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1130773268409021559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958833487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 175acb040452b53479a41f654754e365, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2990676050368625264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65150,6 +65366,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 49460195}
     m_Modifications:
+    - target: {fileID: 1478707376196249112, guid: d1f4a15666e30954890ff4fac9dbbd31, type: 3}
+      propertyPath: MaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478707376196249112, guid: d1f4a15666e30954890ff4fac9dbbd31, type: 3}
+      propertyPath: MinDistance
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2691241157989000626, guid: d1f4a15666e30954890ff4fac9dbbd31, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.08125687
@@ -65205,7 +65429,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3244046420031420449, guid: d1f4a15666e30954890ff4fac9dbbd31, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1130773268409021559}
   m_SourcePrefab: {fileID: 100100000, guid: d1f4a15666e30954890ff4fac9dbbd31, type: 3}
 --- !u!1001 &4531390157703226026
 PrefabInstance:
@@ -65215,6 +65442,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1933566702391314579, guid: 9a8bbf9d32177424e8ab2f80fe1bc2b4, type: 3}
+      propertyPath: somColeta
+      value: 
+      objectReference: {fileID: 8300000, guid: ad74811962faaeb43a3dacd96d79996f, type: 3}
     - target: {fileID: 4325334668947248814, guid: 9a8bbf9d32177424e8ab2f80fe1bc2b4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.62
@@ -65439,6 +65670,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6748111315719262435, guid: dedb0f5dfae986a4ca7e8c20c031e6d0, type: 3}
+      propertyPath: somColeta
+      value: 
+      objectReference: {fileID: 8300000, guid: 51be26d832b224e41ac027c6253d265b, type: 3}
     - target: {fileID: 7202047512486867450, guid: dedb0f5dfae986a4ca7e8c20c031e6d0, type: 3}
       propertyPath: m_Name
       value: "Relic\xE1rio"
